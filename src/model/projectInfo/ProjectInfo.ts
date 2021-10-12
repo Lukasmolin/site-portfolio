@@ -1,4 +1,4 @@
-export default interface CardInfo {
+export default interface ProjectInfo {
     projectTitle: string;
     projectDescription: string;
     projectIconUrl: string;

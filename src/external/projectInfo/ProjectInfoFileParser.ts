@@ -1,10 +1,10 @@
-import CardInfo from "../../model/cardInfo/CardInfo";
+import ProjectInfo from "../../model/projectInfo/ProjectInfo";
 import FileParser from "../FileParser";
 
-export default class CardInfoParser extends FileParser<CardInfo> {
+export default class ProjectInfoParser extends FileParser<ProjectInfo> {
 
     public parse(json: any) {
-        const match: CardInfo = {
+        const match: ProjectInfo = {
             projectDescription: "",
             projectIconUrl: "",
             projectTitle: ""
@@ -14,7 +14,7 @@ export default class CardInfoParser extends FileParser<CardInfo> {
             if(!field)
                 throw new Error('Unable to parse, undefinded field');
         }
-        return json as CardInfo;
+        return json as ProjectInfo;
     }
 
 } 

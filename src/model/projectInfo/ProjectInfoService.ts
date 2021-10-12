@@ -1,9 +1,9 @@
 import GenericRepository from "../GenericRepository";
-import CardInfo from "./CardInfo";
+import ProjectInfo from "./ProjectInfo";
 
-export default class CardInfoService {
+export default class ProjectInfoService {
 
-    constructor(private readonly repository: GenericRepository<CardInfo>) {
+    constructor(private readonly repository: GenericRepository<ProjectInfo>) {
 
     }
 

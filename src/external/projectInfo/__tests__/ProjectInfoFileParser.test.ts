@@ -1,4 +1,4 @@
-import CardInfoFileParser from "../CardInfoFileParser";
+import CardInfoFileParser from "../ProjectInfoFileParser";
 
 describe('should validate card info', () => {
     const getTesting = () => new CardInfoFileParser();
