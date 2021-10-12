@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400&display=swap');
+:root {
+    --main-background-color: rgb(240, 240, 255);
+    --primary-btn-font-weight: 900;
+    --primary-btn-text-color: white;
+    --card-btn-font-weight: 900;
+    --card-btn-text-color: black;
+    --card-background-color: rgb(250, 250, 255);
+    --main-color: rgb(93, 93, 153);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::selection {
+    color: var(--primary-btn-text-color);
+    background: var(--main-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+    font-family: 'Source Code Pro', monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 10px;
+    background-color: var(--main-background-color)
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    margin: 20px;
 }

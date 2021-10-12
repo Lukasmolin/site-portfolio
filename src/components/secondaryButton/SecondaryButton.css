@@ -1,0 +1,8 @@
+.button.secondaryButton {
+    border: 1px solid var(--main-color);
+    background-color: var(--card-background-color);
+}
+
+.button.secondaryButton>a {
+    color: var(--main-color);
+}

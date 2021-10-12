@@ -1,0 +1,8 @@
+.button.primaryButton {
+    background-color: var(--main-color);
+}
+
+.button.primaryButton>a {
+    color: var(--primary-btn-text-color);
+    font-weight: var(--primary-btn-font-weight);
+}
