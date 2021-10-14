@@ -31,9 +31,9 @@ body {
     background-color: var(--main-background-color)
 }
 
-body .wrapper {
+.wrapper {
     display: flex;
     justify-content: space-around;
     align-content: space-around;
-    margin: 20px;
+    padding: 20px;
 }

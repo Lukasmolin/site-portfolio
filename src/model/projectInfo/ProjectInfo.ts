@@ -1,10 +1,12 @@
+import Tech from "../tech/Tech";
+
 export default interface ProjectInfo {
     projectTitle: string;
     projectDescription: string;
-    projectIconUrl: string;
     relatedLinks?: Array<{
         label: string;
-        link: string;
+        url: string;
+        iconName: string;
     }>;
-    tags?: Array<string>;
+    techs: Array<Tech>;
 }
