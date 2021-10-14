@@ -2,26 +2,29 @@
     padding-bottom: 20px;
 }
 
-.stackInfoCardContent svg {
+.glow.stackInfoCardContent svg {
     transition: fill .2.5s .25s;
     transition: filter .3s;
 }
 
-.card:hover .stackInfoCardContent svg {
+.card:hover .glow.stackInfoCardContent svg {
     transition: all .3s;
     fill: var(--card-detail-color);
     filter: blur(1px) saturate(1000%) drop-shadow(0 0 5px var(--card-detail-color));
 }
 
-.card:hover .stackInfoCardContent h1 {
+.card:hover .glow.stackInfoCardContent h1 {
     transition: all .3s;
     color: var(--card-detail-color);
     filter: blur(1px) saturate(1000%) drop-shadow(0 0 5px var(--card-detail-color));
 }
 
-.stackInfoCardContent h1 {
+.glow.stackInfoCardContent h1 {
     transition: fill .2.5s .25s;
     transition: filter .3s;
+}
+
+.stackInfoCardContent h1 {
     text-align: center;
     padding: 5px;
 }
@@ -34,14 +37,17 @@
     padding: 10px;
 }
 
-.stackInfoCardContent li {
+.glow.stackInfoCardContent li {
     transition: fill .2.5s .25s;
     transition: filter .3s;
+}
+
+.stackInfoCardContent li {
     text-align: center;
     padding: 5px;
 }
 
-.card:hover .stackInfoCardContent li {
+.card:hover .glow.stackInfoCardContent li {
     transition: all .3s;
     color: var(--card-detail-color);
     font-weight: bold;

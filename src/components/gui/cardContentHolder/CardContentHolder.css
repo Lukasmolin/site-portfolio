@@ -1,7 +1,5 @@
 .card {
-    max-width: 95vw;
-    min-width: 30vw;
-    min-width: 400px;
+    min-width: 300px;
     border-top: 3px solid var(--card-detail-color);
     padding: 15px;
     box-shadow: 0 0 3px var(--card-shadow-default);

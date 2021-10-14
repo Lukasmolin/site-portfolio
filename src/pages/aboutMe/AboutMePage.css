@@ -1,0 +1,11 @@
+.aboutMePageContent {
+    display: flex;
+}
+
+.aboutMePageContent>div {
+    display: block;
+    padding: 10px;
+}
+.aboutMePageContent .card{
+    margin-bottom: 10px;
+}
