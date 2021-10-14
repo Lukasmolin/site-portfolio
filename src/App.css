@@ -30,7 +30,6 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-content: space-around;
-    padding: 10px;
     background-color: var(--main-background-color)
 }
 
@@ -42,5 +41,5 @@ svg {
     display: flex;
     justify-content: space-around;
     align-content: space-around;
-    padding: 20px;
+    padding: 10px;
 }

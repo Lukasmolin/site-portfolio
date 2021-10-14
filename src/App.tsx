@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import { HeaderButtonProps } from './components/gui/headerButton/HeaderButton';
+import HeaderMenu from './components/gui/headerMenu/HeaderMenu';
 import PrimaryButton from './components/gui/primaryButton/PrimaryButton';
 import SecondaryButton from './components/gui/secondaryButton/SecondaryButton';
 import ProjectInfoCard from './components/modelData/projectInfoCard/ProjectInfoCard';
@@ -31,9 +33,17 @@ function App() {
     ],
     title: 'Java',
   };
+  const btns: HeaderButtonProps[] = [{
+    href: 'https://google.com',
+    text: 'Google Pesquisa'
+  }, {
+    href: 'https://github.com',
+    text: 'Github'
+  }]
   return <>
+    <HeaderMenu buttons={btns}></HeaderMenu>
     <div className="wrapper">
-      <StackInfoCard stackInfo={stackInfo} highlighColor='red'></StackInfoCard>
+      <StackInfoCard stackInfo={stackInfo} highlighColor='orange'></StackInfoCard>
     </div>
     <div className="wrapper">
       <ProjectInfoCard projectInfo={info}></ProjectInfoCard>
