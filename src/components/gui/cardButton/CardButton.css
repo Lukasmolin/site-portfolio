@@ -1,7 +1,6 @@
 .button.cardButton {
     padding-left: 25px;
     padding-right: 25px;
-    margin: 1px;
     background-color: var(--card-background-color);
 }
 
@@ -9,4 +8,11 @@
     padding: 5px 0px 5px 0px;
     color: var(--card-btn-text-color);
     font-weight: var(--card-btn-font-weight);
+    align-self: center;
+}
+
+.button.cardButton img.svgIcon {
+    padding: 2px;
+    min-height: 16px;
+    max-height: 32px;
 }

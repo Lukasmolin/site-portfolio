@@ -1,0 +1,21 @@
+img.iconImg {
+    min-width: 32px;
+    min-height: 32px;
+    max-width: 64px;
+    max-height: 64px;
+}
+
+*:hover > .iconTooltip {
+    display: block;
+}
+
+.iconTooltip {
+    display: none;
+    box-shadow: 0 0 3px grey;
+    padding: 5px;
+    margin-top: 16px;
+    margin-left: 16px;
+    background-color: var(--card-background-color);
+    position: absolute;
+    z-index: 1000;
+}
