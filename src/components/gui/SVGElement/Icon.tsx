@@ -5,7 +5,7 @@ import './Icon.css';
 
 export default function Icon(iconFileName: string, label: string): React.ReactElement {
     return <>
-        <SVGIcon className="iconImg" iconFileName={iconFileName}></SVGIcon>
+        <SVGIcon iconFileName={iconFileName}></SVGIcon>
         <span className="iconTooltip">{label}</span>
     </>
 }

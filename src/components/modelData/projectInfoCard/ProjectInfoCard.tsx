@@ -8,7 +8,7 @@ import './ProjectInfoCard.css';
 export default function ProjectInfoCard(props: { projectInfo: ProjectInfo }): React.ReactElement {
     const { projectInfo } = props;
     return <CardContentHolder>
-        <article>
+        <article className="projectInfoCardContent">
             <h1>{projectInfo.projectTitle}</h1>
             <p>{projectInfo.projectDescription}</p>
             <ul>

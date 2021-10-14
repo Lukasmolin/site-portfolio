@@ -1,9 +1,11 @@
 import React from 'react';
+import SVGAssets from '../../../assets/SVGAssets';
 
-export default function SVGIcon(props: { iconFileName: string, className?: string }): React.ReactElement {
-    const { iconFileName, className } = props;
-    const appendClassName = className ? ' ' + className : '';
-    return <>
-        <img className={'svgIcon' + appendClassName} src={'icons/' + iconFileName} alt="Button logo" />
-    </>;
+export default function SVGIcon(props: { iconFileName: string }): React.ReactElement {
+    const { iconFileName } = props;
+    if(iconFileName in SVGAssets)
+        return SVGAssets[iconFileName as keyof SVGAssets];
+
+    console.error(iconFileName);
+    throw new Error('Icon not found');
 }

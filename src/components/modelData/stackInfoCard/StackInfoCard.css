@@ -1,4 +1,42 @@
+.stackInfoCardContent {
+    padding-bottom: 20px;
+}
+
+.stackInfoCardContent svg {
+    transition: fill .2.5s .25s;
+    transition: filter .3s;
+}
+
+.card:hover .stackInfoCardContent svg {
+    transition: all .3s;
+    fill: var(--card-detail-color);
+    filter: blur(1px) saturate(1000%) drop-shadow(0 0 5px var(--card-detail-color));
+}
+
+.card:hover .stackInfoCardContent h1 {
+    transition: all .3s;
+    color: var(--card-detail-color);
+    filter: blur(1px) saturate(10000%) drop-shadow(0 0 5px var(--card-detail-color));
+}
+
+.stackInfoCardContent h1 {
+    transition: fill .2.5s .25s;
+    transition: filter .3s;
+    text-align: center;
+    padding: 5px;
+}
+
 .stackInfoBadge>div {
     padding: 70px;
-    background-color: red;
+    padding-bottom: 30px;
+}
+
+.stackInfoCardContent ul {
+    padding: 10px;
+}
+
+.stackInfoCardContent li {
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
 }

@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400&display=swap');
 :root {
+    --main-color: rgb(93, 93, 153);
     --main-background-color: rgb(240, 240, 255);
     --primary-btn-font-weight: 900;
     --primary-btn-text-color: white;
     --card-btn-font-weight: 900;
     --card-btn-text-color: black;
     --card-background-color: rgb(250, 250, 255);
-    --main-color: rgb(93, 93, 153);
+    --card-shadow-default: lightgrey;
+    --card-shadow-on-hover: grey;
+    --card-detail-color: var(--main-color);
 }
 
 ::selection {
@@ -29,6 +32,10 @@ body {
     align-content: space-around;
     padding: 10px;
     background-color: var(--main-background-color)
+}
+
+svg {
+    stroke-linejoin: round;
 }
 
 .wrapper {

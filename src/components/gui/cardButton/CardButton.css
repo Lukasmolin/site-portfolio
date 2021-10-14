@@ -11,8 +11,8 @@
     align-self: center;
 }
 
-.button.cardButton img.svgIcon {
-    padding: 2px;
+.button.cardButton svg {
+    padding: 8px;
     min-height: 16px;
-    max-height: 32px;
+    max-height: 56px;
 }
