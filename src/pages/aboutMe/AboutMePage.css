@@ -1,5 +1,13 @@
+h1.aboutMePageHeader {
+    color: var(--main-title-color);
+    font-weight: bold;
+    font-size: 4em;
+    padding: 10px;
+}
+
 .aboutMePageContent {
     display: flex;
+    padding: 20px;
 }
 
 .aboutMePageContent>div {

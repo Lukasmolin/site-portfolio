@@ -2,6 +2,10 @@
     padding-bottom: 20px;
 }
 
+.card:hover .glow.stackInfoCardContent {
+    filter: blur(1px) saturate(10000%);
+}
+
 .glow.stackInfoCardContent svg {
     transition: fill .2.5s .25s;
     transition: filter .3s;
@@ -10,13 +14,13 @@
 .card:hover .glow.stackInfoCardContent svg {
     transition: all .3s;
     fill: var(--card-detail-color);
-    filter: blur(1px) saturate(1000%) drop-shadow(0 0 5px var(--card-detail-color));
+    filter: saturate(10000%) drop-shadow(0 0 10px var(--card-detail-color));
 }
 
 .card:hover .glow.stackInfoCardContent h1 {
     transition: all .3s;
     color: var(--card-detail-color);
-    filter: blur(1px) saturate(1000%) drop-shadow(0 0 5px var(--card-detail-color));
+    filter: saturate(10000%) drop-shadow(0 0 10px var(--card-detail-color));
 }
 
 .glow.stackInfoCardContent h1 {
@@ -51,5 +55,5 @@
     transition: all .3s;
     color: var(--card-detail-color);
     font-weight: bold;
-    filter: blur(1px) saturate(1000%) drop-shadow(0 0 2px var(--card-detail-color));
+    filter: saturate(300%) drop-shadow(0 0 13px var(--card-detail-color));
 }

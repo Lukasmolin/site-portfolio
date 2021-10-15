@@ -2,13 +2,14 @@
 :root {
     --main-color: rgb(93, 93, 153);
     --main-background-color: rgb(240, 240, 255);
+    --main-title-color: var(--main-color);
     --primary-btn-font-weight: 900;
     --primary-btn-text-color: white;
     --card-btn-font-weight: 900;
     --card-btn-text-color: black;
-    --card-background-color: rgb(250, 250, 255);
-    --card-shadow-default: lightgrey;
-    --card-shadow-on-hover: grey;
+    --card-background-color: rgb(214, 214, 218);
+    --card-shadow-default: rgb(107, 107, 107);
+    --card-shadow-on-hover: darkgrey;
     --card-detail-color: var(--main-color);
 }
 

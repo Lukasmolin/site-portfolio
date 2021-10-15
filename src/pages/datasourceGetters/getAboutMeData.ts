@@ -1,4 +1,4 @@
-import AboutMeData from "./AboutMeData";
+import AboutMeData from "../aboutMe/AboutMeData";
 import AboutMeDatasource from "../../datasource/AboutMeDatasource";
 
 const aboutMeData = new AboutMeDatasource();
