@@ -10,11 +10,12 @@ const data = getAboutMeData();
 const headerData = getHeaderMenuData();
 
 export default function AboutMePage() {
-    function createCardFromInfo(info: StackInfo, style?: StackColor) {
+    function createCardFromInfo(info: StackInfo, style?: StackColor, smallbadge?: boolean) {
         const glow = !!style?.glow;
         const color = style?.color;
         return <StackInfoCard
             highlighColor={color}
+            smallBadge={smallbadge}
             glow={glow}
             stackInfo={info}
         ></StackInfoCard>
@@ -24,12 +25,12 @@ export default function AboutMePage() {
     const { left, centerLeft, centerRight, right } = data.cards;
     return <>
         <HeaderMenu data={headerData}></HeaderMenu>
-        <main>
+        <main className='abaoutMePage'>
             <h1 className='aboutMePageHeader'>{title.toString()}</h1>
             <div className='aboutMePageContent'>
                 <div className='left'>
-                    {createCardFromInfo(left.up, data.style?.left?.up)}
-                    {createCardFromInfo(left.down, data.style?.left?.down)}
+                    {createCardFromInfo(left.up, data.style?.left?.up, true)}
+                    {createCardFromInfo(left.down, data.style?.left?.down, true)}
                 </div>
                 <div className='centerLeft'>
                     {createCardFromInfo(centerLeft, data.style?.centerLeft)}
@@ -38,8 +39,8 @@ export default function AboutMePage() {
                     {createCardFromInfo(centerRight, data.style?.centerRight)}
                 </div>
                 <div className='right'>
-                    {createCardFromInfo(right.up, data?.style?.right?.up)}
-                    {createCardFromInfo(right.down, data?.style?.right?.down)}
+                    {createCardFromInfo(right.up, data?.style?.right?.up, true)}
+                    {createCardFromInfo(right.down, data?.style?.right?.down, true)}
                 </div>
             </div>
         </main>

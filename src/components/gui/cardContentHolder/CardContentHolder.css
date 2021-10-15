@@ -3,7 +3,7 @@
     max-width: 22vw;
     border-top: 3px solid var(--card-detail-color);
     padding: 15px;
-    box-shadow: 0 0 3px var(--card-shadow-default);
+    box-shadow: 0 0 5px var(--card-shadow-default);
     transition: box-shadow .4s;
     background-color: var(--card-background-color)
 }

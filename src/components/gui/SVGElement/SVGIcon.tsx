@@ -3,9 +3,8 @@ import SVGAssets from '../../../assets/SVGAssets';
 
 export default function SVGIcon(props: { iconFileName: string }): React.ReactElement {
     const { iconFileName } = props;
-    if(iconFileName in SVGAssets)
+    if (iconFileName in SVGAssets)
         return SVGAssets[iconFileName as keyof SVGAssets];
 
-    console.error(iconFileName);
-    throw new Error('Icon not found');
+    throw new Error('Icon not found: ' + iconFileName);
 }

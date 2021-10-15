@@ -7,13 +7,17 @@ h1.aboutMePageHeader {
 
 .aboutMePageContent {
     display: flex;
+    justify-content: center;
     padding: 20px;
 }
 
 .aboutMePageContent>div {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
 }
+
 .aboutMePageContent .card{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    height: -webkit-fill-available;
 }

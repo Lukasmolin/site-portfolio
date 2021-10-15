@@ -3,7 +3,7 @@
 }
 
 .card:hover .glow.stackInfoCardContent {
-    filter: blur(1px) saturate(10000%);
+    filter: saturate(3000%);
 }
 
 .glow.stackInfoCardContent svg {
@@ -14,13 +14,13 @@
 .card:hover .glow.stackInfoCardContent svg {
     transition: all .3s;
     fill: var(--card-detail-color);
-    filter: saturate(10000%) drop-shadow(0 0 10px var(--card-detail-color));
+    filter: drop-shadow(0 0 10px var(--card-detail-color)) drop-shadow(0 0 1px var(--card-btn-text-color));
 }
 
 .card:hover .glow.stackInfoCardContent h1 {
     transition: all .3s;
     color: var(--card-detail-color);
-    filter: saturate(10000%) drop-shadow(0 0 10px var(--card-detail-color));
+    filter: drop-shadow(0 0 10px var(--card-detail-color)) drop-shadow(0 0 1px var(--card-btn-text-color));
 }
 
 .glow.stackInfoCardContent h1 {
@@ -33,8 +33,24 @@
     padding: 5px;
 }
 
-.stackInfoBadge>div {
-    padding: 30px 70px 30px 70px;
+.stackInfoBadge {
+    padding: 20px 0px 15px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.stackInfoBadge .badge {
+    width: 80%;
+}
+
+.stackInfoSmallBadge {
+    padding: 20px 0px 15px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.stackInfoSmallBadge .badge {
+    width: 30%;
 }
 
 .stackInfoCardContent ul {
@@ -55,5 +71,5 @@
     transition: all .3s;
     color: var(--card-detail-color);
     font-weight: bold;
-    filter: saturate(300%) drop-shadow(0 0 13px var(--card-detail-color));
+    filter: drop-shadow(0 0 10px var(--card-detail-color)) drop-shadow(0 0 1px var(--card-btn-text-color));
 }

@@ -9,16 +9,16 @@ export interface CardStyle {
 }
 
 
-export default function CardContentHolder(props: { children: React.ReactNode, style?: CardStyle }): React.ReactElement {
-    const { children, style } = props;
-    let styleObj = {
-        '--card-detail-color' : style?.cardDetailColor,
-        '--card-shadow-default' : style?.cardShadowDefault,
-        '--card-background-color' : style?.cardBackgroundColor,
-        '--card-shadow-on-hover' : style?.cardShadowOnHoverColor,
+export default function CardContentHolder(props: { children: React.ReactNode, style?: CardStyle, className?: string }): React.ReactElement {
+    const { children, style, className } = props;
+    const styleObj = {
+        '--card-detail-color': style?.cardDetailColor,
+        '--card-shadow-default': style?.cardShadowDefault,
+        '--card-background-color': style?.cardBackgroundColor,
+        '--card-shadow-on-hover': style?.cardShadowOnHoverColor,
     };
-
-    return <div style={styleObj as React.CSSProperties} className={'card'}>
+    const appendClassname = className ? ' ' + className : '';
+    return <div style={styleObj as React.CSSProperties} className={'card' + appendClassname}>
         {children}
     </div>;
 };

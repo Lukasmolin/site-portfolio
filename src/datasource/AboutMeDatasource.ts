@@ -14,7 +14,7 @@ const javaBackend: StackInfo = {
 };
 
 const nodeBackend: StackInfo = {
-    badgeIcon: 'java',
+    badgeIcon: 'node',
     title: 'NodeJS Backend',
     items: [
         'Typescript','Javascript', 'Knex', 'TypeORM', 'Jest', 'NPM'
@@ -22,7 +22,7 @@ const nodeBackend: StackInfo = {
 }
 
 const frontEnd: StackInfo = {
-    badgeIcon: 'java',
+    badgeIcon: 'frontend',
     title: 'Frontend',
     items: [
         'Thymeleaf', 'React', 'Bootstrap', 'HTML5 e CSS'
@@ -30,7 +30,7 @@ const frontEnd: StackInfo = {
 }
 
 const otherTools: StackInfo = {
-    badgeIcon: 'java',
+    badgeIcon: 'tool',
     title: 'Ferramentas',
     items: [
         'GIT', 'Selenium', 'Certbot'
@@ -38,7 +38,7 @@ const otherTools: StackInfo = {
 }
 
 const persistence: StackInfo = {
-    badgeIcon: 'java',
+    badgeIcon: 'database',
     title: 'Bancos de Dados',
     items: [
         'PostgreSQL', 'MongoDB', 'RedisDB', 'SQLite'
@@ -46,7 +46,7 @@ const persistence: StackInfo = {
 }
 
 const deploy: StackInfo = {
-    badgeIcon: 'java',
+    badgeIcon: 'deploy',
     title: 'Deploy',
     items: [
         'Docker', 'Linux Debian', 'AWS EC2'
