@@ -2,7 +2,7 @@
     background-color: var(--main-color);
 }
 
-.button.primaryButton>a {
+.button.primaryButton>* {
     color: var(--primary-btn-text-color);
     font-weight: var(--primary-btn-font-weight);
 }

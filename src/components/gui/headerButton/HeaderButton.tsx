@@ -9,8 +9,5 @@ export interface HeaderButtonData {
 
 export default function HeaderButton(props: HeaderButtonData) {
     const { text, href } = props;
-
-    return BaseButton({
-        text, className: 'headerButton', href
-    });
+    return <BaseButton href={href} className='headerButton' text={text}></BaseButton>
 }

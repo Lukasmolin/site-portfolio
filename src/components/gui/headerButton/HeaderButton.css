@@ -13,7 +13,7 @@
     filter: saturate(1500%) drop-shadow(0 0 3px var(--main-color));
 }
 
-.button.headerButton>a {
+.button.headerButton>* {
     padding: 5px 0px 5px 0px;
     color: var(--main-color);
     font-weight: var(--card-btn-font-weight);
