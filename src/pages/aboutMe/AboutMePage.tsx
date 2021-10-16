@@ -6,6 +6,7 @@ import './AboutMePage.css';
 import HeaderMenu from "../../components/gui/headerMenu/HeaderMenu";
 import StackInfo from "../../model/stackInfo/StackInfo";
 import { StackColor } from "./AboutMeData";
+import CardContentHolder from "../../components/gui/cardContentHolder/CardContentHolder";
 const data = getAboutMeData();
 const headerData = getHeaderMenuData();
 
@@ -21,28 +22,38 @@ export default function AboutMePage() {
         ></StackInfoCard>
     }
 
-    const { title } = data;
+    const { title, text, cardsTitle } = data;
     const { left, centerLeft, centerRight, right } = data.cards;
     return <>
         <HeaderMenu data={headerData}></HeaderMenu>
-        <main className='abaoutMePage'>
-            <h1 className='aboutMePageHeader'>{title.toString()}</h1>
-            <div className='aboutMePageContent'>
-                <div className='left'>
-                    {createCardFromInfo(left.up, data.style?.left?.up, true)}
-                    {createCardFromInfo(left.down, data.style?.left?.down, true)}
+        <main className='aboutMePage'>
+            <section className='aboutText'>
+                <h1 className='aboutMePageHeader'>{title}</h1>
+                <div className='aboutMePageContent'>
+                    <CardContentHolder className='aboutMeTextCard'>
+                        <p>{text}</p>
+                    </CardContentHolder>
                 </div>
-                <div className='centerLeft'>
-                    {createCardFromInfo(centerLeft, data.style?.centerLeft)}
+            </section>
+            <section className='technologies'>
+                <h1 className='aboutMePageHeader'>{cardsTitle}</h1>
+                <div className='aboutMePageContent'>
+                    <div className='left'>
+                        {createCardFromInfo(left.up, data.style?.left?.up, true)}
+                        {createCardFromInfo(left.down, data.style?.left?.down, true)}
+                    </div>
+                    <div className='centerLeft'>
+                        {createCardFromInfo(centerLeft, data.style?.centerLeft)}
+                    </div>
+                    <div className='centerRight'>
+                        {createCardFromInfo(centerRight, data.style?.centerRight)}
+                    </div>
+                    <div className='right'>
+                        {createCardFromInfo(right.up, data?.style?.right?.up, true)}
+                        {createCardFromInfo(right.down, data?.style?.right?.down, true)}
+                    </div>
                 </div>
-                <div className='centerRigth'>
-                    {createCardFromInfo(centerRight, data.style?.centerRight)}
-                </div>
-                <div className='right'>
-                    {createCardFromInfo(right.up, data?.style?.right?.up, true)}
-                    {createCardFromInfo(right.down, data?.style?.right?.down, true)}
-                </div>
-            </div>
+            </section>
         </main>
     </>;
 }

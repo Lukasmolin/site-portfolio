@@ -1,7 +1,17 @@
 .headerMenu {
-    position: sticky;
+    min-width: 100%;
     display: flex;
-    padding: 2px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: var(--main-content-padding);
+    padding-top: 2px;
+    padding-bottom: 2px;
     background-color: var(--card-background-color);
     box-shadow: 0 0 3px var(--card-shadow-on-hover);
+}
+
+@media screen and (max-width: 500px) {
+    .headerMenu {
+        flex-direction: column;
+    }
 }

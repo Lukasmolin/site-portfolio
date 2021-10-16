@@ -7,6 +7,7 @@ export interface StackColor {
 export default interface AboutMeData {
     title: string;
     text: string;
+    cardsTitle: string;
     cards: {
         left: {
             up: StackInfo,

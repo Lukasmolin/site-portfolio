@@ -1,15 +1,15 @@
 import StackInfo from "../model/stackInfo/StackInfo";
 import AboutMeData, { StackColor } from "../pages/aboutMe/AboutMeData";
 
-const title = `Meu stack:`;
-
+const title = `Sobre mim:`;
 const description = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
+const cardsTitle = `Tecnologias:`;
 
 const javaBackend: StackInfo = {
     badgeIcon: 'java',
     title: 'Java Backend',
     items: [
-        'Java', 'Clojure', 'Spring Boot', 'JDBC', 'JPA', 'jUnit', 'Mockito', 'Gradle'
+        'Java', 'Spring Boot', 'JDBC', 'JPA', 'jUnit', 'Mockito', 'Gradle'
     ]
 };
 
@@ -17,7 +17,7 @@ const nodeBackend: StackInfo = {
     badgeIcon: 'node',
     title: 'NodeJS Backend',
     items: [
-        'Typescript','Javascript', 'Knex', 'TypeORM', 'Jest', 'NPM'
+        'Typescript', 'Javascript', 'Knex', 'TypeORM', 'Jest', 'NPM'
     ]
 }
 
@@ -33,13 +33,13 @@ const otherTools: StackInfo = {
     badgeIcon: 'tool',
     title: 'Ferramentas',
     items: [
-        'GIT', 'Selenium', 'Certbot'
+        'GIT', 'Selenium', 'Certbot', 'Trello'
     ]
 }
 
 const persistence: StackInfo = {
     badgeIcon: 'database',
-    title: 'Bancos de Dados',
+    title: 'Persistência',
     items: [
         'PostgreSQL', 'MongoDB', 'RedisDB', 'SQLite'
     ]
@@ -49,7 +49,7 @@ const deploy: StackInfo = {
     badgeIcon: 'deploy',
     title: 'Deploy',
     items: [
-        'Docker', 'Linux Debian', 'AWS EC2'
+        'Docker', 'Linux Debian', 'AWS EC2', 'AWS S3'
     ]
 }
 
@@ -60,11 +60,11 @@ const javaBackendStyle: StackColor = {
 const nodeBackendStyle: StackColor = {
     glow: true, color: 'green'
 };
-    
 
 export default class AboutMeDatasource implements AboutMeData {
     public title = title;
     public text = description;
+    public cardsTitle = cardsTitle;
     public cards = {
         left: { up: frontEnd, down: otherTools },
         centerLeft: nodeBackend,
