@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SVGIcon from '../SVGElement/SVGIcon';
 import './BaseButton.css';
 import './ButtonIcon.css';
 
-export default function BaseButton(props: { text: string, href?: string, className?: string, svgIconPath?: string }): React.ReactElement {
+export default function BaseButton(props: { text: string, href: string, className?: string, svgIconPath?: string }): React.ReactElement {
     const { text, href, className, svgIconPath } = props;
     const toAppendClass = className ? ' ' + className : '';
     const handleDivClick = (ev: React.MouseEvent<HTMLDivElement>) => {
@@ -15,9 +16,9 @@ export default function BaseButton(props: { text: string, href?: string, classNa
         div?.getElementsByTagName('a')[0]?.click();  
     };
     return <div onClick={ev => handleDivClick(ev)} className={'button' + toAppendClass}>
-        <a href={href}>
+        <Link to={href}>
             {text}
-        </a>
+        </Link>
         {svgIconPath && <SVGIcon iconFileName={svgIconPath}></SVGIcon>}
     </div>;
 }

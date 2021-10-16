@@ -1,0 +1,19 @@
+.homePage {
+    display: flex;
+    justify-content: space-around;
+}
+
+.homePage>div{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+
+.homePage .card{
+    margin: 25px;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: var(--primary-btn-font-weight);
+    color: var(--main-color);
+}

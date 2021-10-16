@@ -10,7 +10,7 @@ import CardContentHolder from "../../components/gui/cardContentHolder/CardConten
 const data = getAboutMeData();
 const headerData = getHeaderMenuData();
 
-export default function AboutMePage() {
+export default function AboutMePage() : React.ReactElement {
     function createCardFromInfo(info: StackInfo, style?: StackColor, smallbadge?: boolean) {
         const glow = !!style?.glow;
         const color = style?.color;
