@@ -3,15 +3,23 @@
     --main-color: rgb(93, 93, 153);
     --main-background-color: rgb(240, 240, 255);
     --main-title-color: var(--main-color);
+    --main-content-padding: 0px 150px 0px 150px;
+    --main-font-size: 3.5em;
+    --main-secondary-font-size: 1.6em;
+    --main-text-font-size: 1.6em;
+    --main-secondary-text-size: 1em;
+
     --primary-btn-font-weight: 900;
     --primary-btn-text-color: white;
+    
     --card-btn-font-weight: 900;
     --card-btn-text-color: black;
     --card-background-color: rgb(235, 235, 235);
     --card-shadow-default: rgb(107, 107, 107);
     --card-shadow-on-hover: darkgrey;
     --card-detail-color: var(--main-color);
-    --main-content-padding: 0px 150px 0px 150px;
+    --badge-max-width: 20vw;
+    --badge-max-height: 20vw;
 }
 
 ::selection {
@@ -28,6 +36,7 @@
 }
 
 body {
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -40,6 +49,13 @@ a, a:visited, a:hover, a:active {
     text-decoration: none;
     cursor: default;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-size: var(--main-font-size);
+}
+
+p {
+    font-size: var(--main-secondary-font-size);
+}
 
 svg {
     stroke-linejoin: round;
@@ -49,7 +65,7 @@ svg {
     padding: var(--main-content-padding);
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1600px){
     :root {
         --main-content-padding: 0px 50px 0px 50px;
     }
@@ -58,11 +74,19 @@ svg {
 @media screen and (max-width: 1000px){
     :root {
         --main-content-padding: 0px 20px 0px 20px;
+        --main-font-size: 3em;
+        --main-secondary-font-size: 1.4em;
+        --main-text-font-size: 1.4em;
+        --main-secondary-text-size: 1em;
     }
 }
 
 @media screen and (max-width: 500px){
     :root {
-        --main-content-padding: 0px 10px 0px 10px;
+        --main-content-padding: 0px 3px 0px 3px;
+        --main-font-size: 2em;
+        --main-secondary-font-size: 1.2em;
+        --main-text-font-size: 1.2em;
+        --main-secondary-text-size: 0.8em;
     }
 }

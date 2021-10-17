@@ -10,7 +10,7 @@
     box-shadow: 0 0 3px var(--card-shadow-on-hover);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
     .headerMenu {
         flex-direction: column;
     }

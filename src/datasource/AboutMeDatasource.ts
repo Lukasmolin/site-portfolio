@@ -39,7 +39,7 @@ const otherTools: StackInfo = {
 
 const persistence: StackInfo = {
     badgeIcon: 'database',
-    title: 'Persistência',
+    title: 'Banco de Dados',
     items: [
         'PostgreSQL', 'MongoDB', 'RedisDB', 'SQLite'
     ]

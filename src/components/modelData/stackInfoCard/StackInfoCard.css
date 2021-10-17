@@ -58,6 +58,7 @@
 }
 
 .glow.stackInfoCardContent li {
+    font-size: var(--main-secondary-text-size);
     transition: fill .2.5s .25s;
     transition: filter .3s;
 }
@@ -72,4 +73,10 @@
     color: var(--card-detail-color);
     font-weight: bold;
     filter: drop-shadow(0 0 10px var(--card-detail-color)) drop-shadow(0 0 1px var(--card-btn-text-color));
+}
+
+@media screen and (max-width: 500px) {
+    .stackInfoCard {
+        --badge-max-width: 50vw;
+    }
 }

@@ -1,3 +1,14 @@
 .badge {
+    max-width: var(--badge-max-width);
+    max-height: var(--badge-max-height);
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.badge * {
+    max-width: var(--badge-max-width);
+    max-height: var(--badge-max-height);
 }

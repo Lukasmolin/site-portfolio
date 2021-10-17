@@ -1,19 +1,31 @@
 .homePage {
-    display: flex;
-    justify-content: space-around;
-}
-
-.homePage>div{
-    padding-top: 100px;
-    display: flex;
+    min-height: 100vh;
     flex-direction: column;
-    width: min-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
-.homePage .card{
-    margin: 25px;
+.homePage .button{
+    margin: 10px;
+    width: 50%;
     text-align: center;
     white-space: nowrap;
+    padding: 25px;
+    font-size: 2em;
     font-weight: var(--primary-btn-font-weight);
     color: var(--main-color);
+}
+
+@media screen and (max-width: 1000px) {
+    .homePage .button{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .homePage .button{
+        width: 95%;
+    }
 }
