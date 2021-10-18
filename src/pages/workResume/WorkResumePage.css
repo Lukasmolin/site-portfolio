@@ -1,0 +1,18 @@
+.workResumePage section:first-child {
+    margin-top: 20px;
+}
+
+.workResumePage section{
+    margin-bottom: 20px;
+}
+
+.workResumeCard {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 500px) {
+    .workResumeCard {
+        flex-direction: column;
+    }
+}

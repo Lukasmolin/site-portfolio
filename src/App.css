@@ -61,19 +61,30 @@ svg {
     stroke-linejoin: round;
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
 #root main {
     padding: var(--main-content-padding);
+    max-width: 75vw;
+    align-self: center;
 }
 
 @media screen and (max-width: 1600px){
     :root {
         --main-content-padding: 0px 50px 0px 50px;
     }
+
+    #root main {
+        max-width: inherit;
+    }
 }
 
 @media screen and (max-width: 1000px){
     :root {
-        --main-content-padding: 0px 20px 0px 20px;
+        --main-content-padding: 0px 25px 0px 25px;
         --main-font-size: 3em;
         --main-secondary-font-size: 1.4em;
         --main-text-font-size: 1.4em;
@@ -87,6 +98,5 @@ svg {
         --main-font-size: 2em;
         --main-secondary-font-size: 1.2em;
         --main-text-font-size: 1.2em;
-        --main-secondary-text-size: 0.8em;
     }
 }

@@ -13,4 +13,10 @@
     filter: contrast(70%);
 }
 
+@media screen and (max-width: 750px) {
+    .button {
+        padding: 5px 5px 5px 5px;
+    }
+}
+
 

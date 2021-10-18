@@ -72,8 +72,7 @@ h1.aboutMePageHeader {
 
 @media screen and (max-width: 500px){
     .technologies .aboutMePageContent>div {
-        min-width: 80%;
-        max-width: 80%;
+        min-width: 100%;
     }
 
     .technologies .aboutMePageContent .left {
