@@ -58,7 +58,7 @@
 }
 
 .glow.stackInfoCardContent li {
-    font-size: var(--main-secondary-text-size);
+    font-size: var(--small-font-size);
     transition: fill .2.5s .25s;
     transition: filter .3s;
 }

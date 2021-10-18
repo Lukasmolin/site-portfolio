@@ -11,13 +11,13 @@
 }
 
 .card :is(h1, h2, h3, h4, h5, h6) {
-    font-size: var(--main-secondary-font-size);
+    font-size: var(--secondary-font-size);
     font-weight: 900;
     padding: 5px 15px 5px 10px;
 }
 
 .card p {
-    font-size: var(--main-text-font-size);
+    font-size: var(--secondary-font-size);
     padding: 5px 15px 10px 15px;
 }
 

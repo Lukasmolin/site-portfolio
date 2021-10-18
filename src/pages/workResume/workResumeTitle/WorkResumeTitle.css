@@ -3,7 +3,7 @@
 }
 
 .workResumeTitle .personName {
-    font-size: var(--main-text-font-size);
+    font-size:  var(--main-font-size);
     font-weight: bold;
     color: var(--main-color);
 }
@@ -12,11 +12,11 @@
     padding-left: 5%;
     color: var(--main-color);
     font-weight: bold;
-    font-size: var(--main-secondary-text-size);
+    font-size: var(--small-font-size);
 }
 
 .workResumeTitle .personAddress {
-    font-size: var(--main-secondary-text-size);
+    font-size: var(--small-font-size);
     padding-left: 5%;
 }
 
@@ -28,6 +28,13 @@
     padding: 1px;
     border-radius: 100%;
     box-shadow: 0 0 5px grey;
+}
+
+.workResumeTitle .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
 }
 
 .workResumeTitle .personSocial .cardButton {
@@ -50,10 +57,17 @@
         width: 40%;
         min-width: 200px;
     }
+    .workResumeTitle .content {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .workResumeTitle .profilePic {
         width: 90%;
+    }
+
+    .workResumeTitle .content {
+        width: inherit;
     }
 }

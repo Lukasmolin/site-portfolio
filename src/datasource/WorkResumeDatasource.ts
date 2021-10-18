@@ -1,4 +1,4 @@
-import WorkResumeData from "../pages/workResume/WorkResumeData";
+import WorkResumeData from '../pages/workResume/WorkResumeData';
 
 const title: WorkResumeData['title'] = {
     personName: 'Lucas Molin',
@@ -22,6 +22,12 @@ const title: WorkResumeData['title'] = {
     ]
 };
 
+const quote: WorkResumeData['quote'] = {
+    text: 'Em algum lugar, algo incrível está esperando para ser descoberto.',
+    authorName: 'Carl Sagan'
+}
+
 export default class WorkResumeDatasource implements WorkResumeData {
     public readonly title = title;
+    public readonly quote = quote;
 }

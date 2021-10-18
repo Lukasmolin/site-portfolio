@@ -8,7 +8,7 @@ import './WorkResumePage.css';
 import WorkResumeTitle from './workResumeTitle/WorkResumeTitle';
 
 const data = getWorkResumeData();
-const { title } = data;
+const { title, quote } = data;
 const menuData = getHeaderMenuData();
 
 export default function WorkResumePage(): React.ReactElement {
@@ -17,6 +17,14 @@ export default function WorkResumePage(): React.ReactElement {
         <main className='workResumePage'>
             <section className='workResumeTitle'>
                 <WorkResumeTitle data={title}></WorkResumeTitle>
+            </section>
+            <section className='workResumeQuote'>
+                <figure>
+                    <blockquote>
+                        "{quote.text}"
+                    </blockquote>
+                    <figcaption>{quote.authorName}</figcaption>
+                </figure>
             </section>
         </main>
     </>;

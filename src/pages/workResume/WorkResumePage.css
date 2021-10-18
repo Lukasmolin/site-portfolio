@@ -2,13 +2,37 @@
     margin-top: 20px;
 }
 
-.workResumePage section{
+.workResumePage section {
     margin-bottom: 20px;
 }
 
 .workResumeCard {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+.workResumeQuote {
+    padding: 25px;
+}
+
+.workResumeQuote blockquote {
+    font-size: var(--main-font-size);
+    color: var(--main-color);
+    white-space: pre-wrap;
+}
+
+.workResumeQuote>* {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.workResumeQuote figcaption {
+    font-size: var(--small-font-size);
+    font-weight: bold;
+    color: var(--main-color);
+    padding-top: 20px;
+    width: fit-content;
 }
 
 @media screen and (max-width: 500px) {

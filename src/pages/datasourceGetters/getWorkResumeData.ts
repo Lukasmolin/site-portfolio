@@ -1,5 +1,5 @@
-import WorkResumeData from "../workResume/WorkResumeData";
-import WorkResumeDatasource from "../../datasource/WorkResumeDatasource";
+import WorkResumeData from '../workResume/WorkResumeData';
+import WorkResumeDatasource from '../../datasource/WorkResumeDatasource';
 
 const data = new WorkResumeDatasource();
 

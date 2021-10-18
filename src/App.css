@@ -5,9 +5,8 @@
     --main-title-color: var(--main-color);
     --main-content-padding: 0px 150px 0px 150px;
     --main-font-size: 3.5em;
-    --main-secondary-font-size: 1.6em;
-    --main-text-font-size: 1.6em;
-    --main-secondary-text-size: 1em;
+    --secondary-font-size: 1.6em;
+    --small-font-size: 1em;
 
     --primary-btn-font-weight: 900;
     --primary-btn-text-color: white;
@@ -54,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-size: var(--main-secondary-font-size);
+    font-size: var(--secondary-font-size);
 }
 
 svg {
@@ -86,9 +85,9 @@ svg {
     :root {
         --main-content-padding: 0px 25px 0px 25px;
         --main-font-size: 3em;
-        --main-secondary-font-size: 1.4em;
-        --main-text-font-size: 1.4em;
-        --main-secondary-text-size: 1em;
+        --secondary-font-size: 1.4em;
+        --secondary-font-size: 1.4em;
+        --small-font-size: 1em;
     }
 }
 
@@ -96,7 +95,7 @@ svg {
     :root {
         --main-content-padding: 0px 3px 0px 3px;
         --main-font-size: 2em;
-        --main-secondary-font-size: 1.2em;
-        --main-text-font-size: 1.2em;
+        --secondary-font-size: 1.2em;
+        --secondary-font-size: 1.2em;
     }
 }
