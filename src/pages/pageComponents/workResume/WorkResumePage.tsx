@@ -1,5 +1,4 @@
 import React from 'react';
-import CardContentHolder from '../../../components/gui/cardContentHolder/CardContentHolder';
 import HeaderMenu from '../../../components/gui/headerMenu/HeaderMenu';
 import getHeaderMenuData from '../../datasourceGetters/getHeaderMenuData';
 import getWorkResumeData from '../../datasourceGetters/getWorkResumeData';
@@ -9,56 +8,35 @@ import WorkResumeTitle from './workResumeTitle/WorkResumeTitle';
 
 const menuData = getHeaderMenuData();
 const data = getWorkResumeData();
-const { title, quote, mainObjective, experiencesHeading, experiences,
-    educationHeading, education, softSkillsHeading, softSkills } = data;
+const { person, workResume } = data;
 
 export default function WorkResumePage(): React.ReactElement {
     return <>
         <HeaderMenu data={menuData}></HeaderMenu>
         <main className='workResumePage'>
             <section className='workResumeTitle'>
-                <WorkResumeTitle data={title}></WorkResumeTitle>
+                <WorkResumeTitle data={{ person }}></WorkResumeTitle>
             </section>
             <section className='workResumeQuote'>
                 <figure>
                     <blockquote>
-                        '{quote.text}'
+                        "{workResume.quote.text}"
                     </blockquote>
-                    <figcaption>{quote.authorName}</figcaption>
+                    <figcaption>{workResume.quote.authorName}</figcaption>
                 </figure>
             </section>
-            <section className='workObjective'>
-                <WorkResumeInfoCard data={{
-                    paragraph: mainObjective
-                }}
-                ></WorkResumeInfoCard>
-            </section>
-            <section className='workSkills'>
-                <h1>{softSkillsHeading}</h1>
-                <CardContentHolder className='workSkillsCard'>
-                    <ul>
-                        {softSkills.map(text => <li key={text}>{text}</li>)}
-                    </ul>
-                </CardContentHolder>
-            </section>
-            <section className='workExperience'>
-                <h1>{experiencesHeading}</h1>
-                {experiences.map(edu => {
-                    return <WorkResumeInfoCard
-                        className='workExperienceCard'
-                        data={edu}
-                    ></WorkResumeInfoCard>
-                })}
-            </section>
-            <section className='education'>
-                <h1>{educationHeading}</h1>
-                {education.map(edu => {
-                    return <WorkResumeInfoCard
-                        className='educationCard'
-                        data={edu}
-                    ></WorkResumeInfoCard>
-                })}
-            </section>
+            {workResume.content.map(section => {
+                return <section key={section.label}>
+                    {section.heading && <h1>{section.heading}</h1>}
+                    {section.items.map((item, index) => {
+                        const key = item.content[0] ? item.content[0] : index;
+                        return <WorkResumeInfoCard 
+                            key={key}
+                            data={item}
+                        ></WorkResumeInfoCard>
+                    })}
+                </section>;
+            })}
         </main>
     </>;
 }

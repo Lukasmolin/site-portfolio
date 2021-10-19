@@ -1,5 +1,5 @@
-export default interface WorkResumeInfoCardData {
-    heading?: string;
-    subtitle?: string;
-    paragraph: string;
+import WorkResumeItem from "../../../../model/workResume/WorkResumeItem";
+
+export default interface WorkResumeInfoCardData extends WorkResumeItem {
+    
 }

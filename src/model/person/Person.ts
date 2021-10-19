@@ -1,9 +1,12 @@
-export default interface PortfolioOwner {
+export default interface Person {
     name: string;
+    role: string;
+    adress: string;
     aboutMe: string;
     profilePictureUrl: string;
-    social: [{
-        link: string;
-        svgLabelUrl: string;
-    }]
+    social: Array<{
+        href: string;
+        iconName: string;
+        label: string;
+    }>;
 }

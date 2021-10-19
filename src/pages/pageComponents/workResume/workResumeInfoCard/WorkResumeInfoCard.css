@@ -8,3 +8,9 @@
     padding-left: 15px;
     font-style: italic;
 }
+
+.workResumeInfoCard li {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+}
