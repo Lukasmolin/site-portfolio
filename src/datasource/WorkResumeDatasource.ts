@@ -1,28 +1,4 @@
 import WorkResume from '../model/workResume/WorkResume';
-import WorkResumeData from '../pages/pageComponents/workResume/WorkResumeData';
-
-const person: WorkResumeData['person'] = {
-    name: 'Lucas Molin',
-    role: 'Desenvolvedor Web',
-    adress: 'Juiz de Fora, Minas Gerais, Brasil',
-    profilePictureUrl: 'https://avatars.githubusercontent.com/u/38398230?v=4',
-    aboutMe: '',
-    social: [
-        {
-            label: 'Github',
-            href: 'https://github.com',
-            iconName: 'frontend'
-        }, {
-            label: 'LinkedIN',
-            href: 'https://linkedin.com',
-            iconName: 'deploy'
-        }, {
-            label: 'Whatsapp',
-            href: 'https://google.com',
-            iconName: 'deploy'
-        }
-    ]
-};
 
 const workResume: WorkResume = {
     owner: {
@@ -95,7 +71,4 @@ const workResume: WorkResume = {
     }]
 }
 
-export default class WorkResumeDatasource implements WorkResumeData {
-    public readonly workResume = workResume;
-    public readonly person = person;
-}
+export default workResume;
