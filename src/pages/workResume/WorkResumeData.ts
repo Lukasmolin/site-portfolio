@@ -1,3 +1,4 @@
+import WorkResumeInfoCardData from './workResumeInfoCard/WorkResumeInfoCardData';
 import WorkResumeTitleData from './workResumeTitle/WorkResumeTitleData';
 
 export default interface WorkResumeData {
@@ -6,4 +7,11 @@ export default interface WorkResumeData {
         authorName: string;
         text: string;
     };
+    mainObjective: string;
+    softSkillsHeading: string;
+    softSkills: string[];
+    experiencesHeading: string;
+    experiences: WorkResumeInfoCardData[];
+    educationHeading: string;
+    education: WorkResumeInfoCardData[];
 }

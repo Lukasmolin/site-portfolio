@@ -7,10 +7,8 @@
     --main-font-size: 3.5em;
     --secondary-font-size: 1.6em;
     --small-font-size: 1em;
-
     --primary-btn-font-weight: 900;
     --primary-btn-text-color: white;
-    
     --card-btn-font-weight: 900;
     --card-btn-text-color: black;
     --card-background-color: rgb(235, 235, 235);
@@ -48,12 +46,14 @@ a, a:visited, a:hover, a:active {
     text-decoration: none;
     cursor: default;
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-size: var(--main-font-size);
 }
 
 p {
     font-size: var(--secondary-font-size);
+    text-align: justify;
 }
 
 svg {
@@ -71,17 +71,16 @@ svg {
     align-self: center;
 }
 
-@media screen and (max-width: 1600px){
+@media screen and (max-width: 1600px) {
     :root {
         --main-content-padding: 0px 50px 0px 50px;
     }
-
     #root main {
         max-width: inherit;
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
     :root {
         --main-content-padding: 0px 25px 0px 25px;
         --main-font-size: 3em;
@@ -91,7 +90,7 @@ svg {
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     :root {
         --main-content-padding: 0px 3px 0px 3px;
         --main-font-size: 2em;

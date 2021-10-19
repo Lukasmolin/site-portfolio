@@ -1,0 +1,10 @@
+.workResumeInfoCard h2 {
+    font-size: var(--secondary-font-size);
+    color: var(--main-color);
+}
+
+.workResumeInfoCard .subtitle {
+    font: optional;
+    padding-left: 15px;
+    font-style: italic;
+}

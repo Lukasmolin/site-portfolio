@@ -2,6 +2,11 @@
     margin-top: 20px;
 }
 
+.workResumePage h1 {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
 .workResumePage section {
     margin-bottom: 20px;
 }
@@ -28,11 +33,25 @@
 }
 
 .workResumeQuote figcaption {
-    font-size: var(--small-font-size);
+    font-size: var(--secondary-font-size);
     font-weight: bold;
     color: var(--main-color);
     padding-top: 20px;
     width: fit-content;
+}
+
+.workSkills .workSkillsCard {
+    font-weight: bold;
+}
+
+.workSkills .workSkillsCard ul {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.workSkills .workSkillsCard li {
+    margin: 10px;
+    text-align: center;
 }
 
 @media screen and (max-width: 500px) {
