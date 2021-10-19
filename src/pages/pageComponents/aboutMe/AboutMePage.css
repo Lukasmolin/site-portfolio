@@ -1,5 +1,4 @@
 h1.aboutMePageHeader {
-    color: var(--main-title-color);
     font-weight: bold;
     padding: 10px 0px 10px 0px;
 }
@@ -22,6 +21,11 @@ h1.aboutMePageHeader {
     max-width: 25%;
 }
 
+.aboutMePageContent .stackInfoCard li{
+    color: var(--main-color);
+    font-size: var(--secondary-font-size);
+}
+
 .technologies .aboutMePageContent .left {
     padding: 0px 20px 0px 0px;
 }
@@ -39,7 +43,7 @@ h1.aboutMePageHeader {
 }
 
 .aboutMePageContent .card {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     height: -webkit-fill-available;
 }
 

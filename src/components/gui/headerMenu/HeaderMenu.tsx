@@ -8,9 +8,11 @@ export interface HeaderMenuData {
 
 export default function HeaderMenu(props: { data: HeaderMenuData }) {
     const { buttons } = props.data;
-    return <nav className={'headerMenu'}>
-        {
-            buttons.map(btn => <HeaderButton {...btn} key={btn.href}></HeaderButton>)
-        }
-    </nav>
+    return <nav className='headerMenu'>
+        <div className={'headerMenuContainer'}>
+            {
+                buttons.map(btn => <HeaderButton {...btn} key={btn.href}></HeaderButton>)
+            }
+        </div>
+    </nav>;
 }

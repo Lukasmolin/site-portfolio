@@ -7,7 +7,7 @@ import './ProjectInfoCard.css';
 
 export default function ProjectInfoCard(props: { projectInfo: ProjectInfo }): React.ReactElement {
     const { projectInfo } = props;
-    return <CardContentHolder>
+    return <CardContentHolder className='projectInfoCard'>
         <article className='projectInfoCardContent'>
             <h1>{projectInfo.projectTitle}</h1>
             <p>{projectInfo.projectDescription}</p>
@@ -20,10 +20,8 @@ export default function ProjectInfoCard(props: { projectInfo: ProjectInfo }): Re
             </ul>
             <ul>
                 {projectInfo.relatedLinks?.map(link => {
-                    return <li key={link.url}>{CardButton({
-                        text: link.label,
-                        svgIconPath: link.iconName,
-                        href: link.url
+                    return <li key={link.href}>{CardButton({
+                        ...link
                     })}</li>
                 })}
             </ul>

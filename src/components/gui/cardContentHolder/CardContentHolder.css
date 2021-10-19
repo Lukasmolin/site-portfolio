@@ -1,9 +1,11 @@
 .card {
     border-top: 3px solid var(--card-detail-color);
-    padding: 15px;
+    padding: 20px;
     box-shadow: 0 0 5px var(--card-shadow-default);
     transition: box-shadow .4s;
-    background-color: var(--card-background-color)
+    background-color: var(--card-background-color);
+    border-radius: 10px;
+    color: var(--card-btn-text-color);
 }
 
 .card:hover {
@@ -17,10 +19,10 @@
 }
 
 .card p {
-    font-size: var(--secondary-font-size);
+    font-size: var(--secondary-font-size);    
     padding: 5px 15px 10px 15px;
 }
 
-.card ul {
-    list-style-type: none;
+.card li {
+    font-size: var(--secondary-font-size);
 }

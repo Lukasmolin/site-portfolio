@@ -2,8 +2,8 @@ import { HeaderButtonData } from '../components/gui/headerButton/HeaderButton';
 import { HeaderMenuData } from '../components/gui/headerMenu/HeaderMenu';
 
 const buttons: Array<HeaderButtonData> = [
-    { href: '/sobre', text: 'Sobre mim'},
-    { href: '/portfolio', text: 'Projetos'},
+    { href: '/about', text: 'Sobre mim'},
+    { href: '/projects', text: 'Projetos'},
     { href: '/resume', text: 'Currículo' }
 ];
 

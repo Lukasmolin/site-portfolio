@@ -1,8 +1,11 @@
 .button.headerButton {
-    padding: 0px 25px 0px 25px;
+    padding: 10px 30px 10px 30px;
     margin: 5px;
     border: 1px solid var(--main-color);
     background-color: var(--card-background-color);
+    color: var(--main-color);
+    font-weight: var(--card-btn-font-weight);
+    font-size: var(--secondary-font-size);
 }
 
 .button.headerButton:hover {
@@ -14,8 +17,5 @@
 }
 
 .button.headerButton>* {
-    padding: 5px 0px 5px 0px;
-    color: var(--main-color);
-    font-weight: var(--card-btn-font-weight);
     align-self: center;
 }

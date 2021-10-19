@@ -19,9 +19,7 @@ export default function WorkResumePage(): React.ReactElement {
             </section>
             <section className='workResumeQuote'>
                 <figure>
-                    <blockquote>
-                        "{workResume.quote.text}"
-                    </blockquote>
+                    <blockquote>"{workResume.quote.text}"</blockquote>
                     <figcaption>{workResume.quote.authorName}</figcaption>
                 </figure>
             </section>

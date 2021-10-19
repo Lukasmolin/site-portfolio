@@ -22,11 +22,7 @@ export default function WorkResumeTitle(props: { data: WorkResumeTitleData }) {
                 <ul>
                     {person.social.map(social => {
                         return <li key={social.href}>
-                            <CardButton
-                                text={social.label}
-                                href={social.href}
-                                svgIconPath={social.iconName}
-                            ></CardButton>
+                            <CardButton {...social}></CardButton>
                         </li>;
                     })}
                 </ul>

@@ -54,11 +54,11 @@ const deploy: StackInfo = {
 }
 
 const javaBackendStyle: StackColor = {
-    glow: true, color: '#E86F00'
+    color: '#E86F00'
 }
 
 const nodeBackendStyle: StackColor = {
-    glow: true, color: 'green'
+    color: '#339933'
 };
 
 export default class AboutMeDatasource implements AboutMeData {

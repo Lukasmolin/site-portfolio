@@ -12,12 +12,10 @@ const headerData = getHeaderMenuData();
 
 export default function AboutMePage(): React.ReactElement {
     function createCardFromInfo(info: StackInfo, style?: StackColor, smallbadge?: boolean) {
-        const glow = !!style?.glow;
         const color = style?.color;
         return <StackInfoCard
             highlighColor={color}
             smallBadge={smallbadge}
-            glow={glow}
             stackInfo={info}
         ></StackInfoCard>
     }

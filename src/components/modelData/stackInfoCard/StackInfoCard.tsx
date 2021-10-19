@@ -4,16 +4,15 @@ import CardContentHolder, { CardStyle } from '../../gui/cardContentHolder/CardCo
 import Badge from '../../gui/SVGElement/Badge';
 import './StackInfoCard.css';
 
-export default function StackInfoCard(props: { stackInfo: StackInfo, highlighColor?: string, glow?: boolean, smallBadge?: boolean }): React.ReactElement {
+export default function StackInfoCard(props: { stackInfo: StackInfo, highlighColor?: string, smallBadge?: boolean }): React.ReactElement {
     const { stackInfo, highlighColor, smallBadge } = props;
     const cardStyle: CardStyle = {
         cardDetailColor: highlighColor,
         cardShadowOnHoverColor: highlighColor
     };
-    const glow = props.glow ? ' glow' : '';
     const badgeClassName = smallBadge ? 'stackInfoSmallBadge' : 'stackInfoBadge';
     return <CardContentHolder className='stackInfoCard' style={cardStyle}>
-        <article className={'stackInfoCardContent' + glow}>
+        <article className={'stackInfoCardContent'}>
             <div className={badgeClassName}>
                 <Badge iconFileName={stackInfo.badgeIcon}></Badge>
             </div>

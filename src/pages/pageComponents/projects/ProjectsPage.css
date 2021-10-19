@@ -1,0 +1,23 @@
+.projectsPageContent .projectCardsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projectsPageContent .projectCardsGrid .projectInfoCard {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-width: 30%;
+}
+
+@media screen and (max-width: 1000px) {
+    .projectsPageContent .projectCardsGrid .projectInfoCard {
+        max-width: 49%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .projectsPageContent .projectCardsGrid .projectInfoCard {
+        max-width: 100%;
+    }
+}

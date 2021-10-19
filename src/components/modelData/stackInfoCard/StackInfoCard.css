@@ -2,30 +2,12 @@
     padding-bottom: 20px;
 }
 
-.card:hover .glow.stackInfoCardContent {
-    filter: saturate(3000%);
+.stackInfoCard svg {
+    fill: var(--main-color);
 }
 
-.glow.stackInfoCardContent svg {
-    transition: fill .2.5s .25s;
-    transition: filter .3s;
-}
-
-.card:hover .glow.stackInfoCardContent svg {
-    transition: all .3s;
-    fill: var(--card-detail-color);
-    filter: drop-shadow(0 0 10px var(--card-detail-color)) drop-shadow(0 0 1px var(--card-btn-text-color));
-}
-
-.card:hover .glow.stackInfoCardContent h1 {
-    transition: all .3s;
-    color: var(--card-detail-color);
-    filter: drop-shadow(0 0 10px var(--card-detail-color)) drop-shadow(0 0 1px var(--card-btn-text-color));
-}
-
-.glow.stackInfoCardContent h1 {
-    transition: fill .2.5s .25s;
-    transition: filter .3s;
+.stackInfoCard svg *{
+    fill: var(--main-color);
 }
 
 .stackInfoCardContent h1 {
@@ -57,22 +39,9 @@
     padding: 10px;
 }
 
-.glow.stackInfoCardContent li {
-    font-size: var(--small-font-size);
-    transition: fill .2.5s .25s;
-    transition: filter .3s;
-}
-
 .stackInfoCardContent li {
     text-align: center;
     padding: 5px;
-}
-
-.card:hover .glow.stackInfoCardContent li {
-    transition: all .3s;
-    color: var(--card-detail-color);
-    font-weight: bold;
-    filter: drop-shadow(0 0 10px var(--card-detail-color)) drop-shadow(0 0 1px var(--card-btn-text-color));
 }
 
 @media screen and (max-width: 500px) {

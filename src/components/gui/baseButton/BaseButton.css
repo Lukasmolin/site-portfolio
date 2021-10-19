@@ -1,6 +1,7 @@
 .button {
+    border-radius: 5px;
     display: flex;
-    padding: 10px 15px 10px 15px;
+    padding: 20px 30px 20px 30px;
     transition: filter .2s;
     justify-content: space-around;
 }
@@ -13,9 +14,13 @@
     filter: contrast(70%);
 }
 
+.button .buttonIcon {
+    display: flex;
+}
+
 @media screen and (max-width: 750px) {
     .button {
-        padding: 5px 5px 5px 5px;
+        padding: 15px 15px 15px 15px;
     }
 }
 

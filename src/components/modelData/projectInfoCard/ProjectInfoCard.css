@@ -3,6 +3,14 @@
     min-height: 32px;
 }
 
+.projectTechIcon svg {
+    fill: var(--main-color);
+}
+
+.projectTechIcon svg *{
+    fill: var(--main-color);
+}
+
 .projectTechIcon {
     display: flex;
     flex-wrap: nowrap;

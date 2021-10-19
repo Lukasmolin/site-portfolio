@@ -1,12 +1,9 @@
 import Tech from '../tech/Tech';
+import WebLink from '../webLink/WebLink';
 
 export default interface ProjectInfo {
     projectTitle: string;
     projectDescription: string;
-    relatedLinks?: Array<{
-        label: string;
-        url: string;
-        iconName: string;
-    }>;
+    relatedLinks?: WebLink[];
     techs: Array<Tech>;
 }

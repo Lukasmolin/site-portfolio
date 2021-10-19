@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400&display=swap');
 :root {
-    --main-color: rgb(93, 93, 153);
-    --main-background-color: rgb(240, 240, 255);
+    --main-color: #5D5D99;
+    --main-background-color: #E8E8F1;
     --main-title-color: var(--main-color);
-    --main-content-padding: 0px 150px 0px 150px;
+    --main-content-padding: 0px;
     --main-font-size: 3.5em;
     --secondary-font-size: 1.6em;
     --small-font-size: 1em;
     --primary-btn-font-weight: 900;
-    --primary-btn-text-color: white;
+    --primary-btn-text-color: #fff;
     --card-btn-font-weight: 900;
-    --card-btn-text-color: black;
-    --card-background-color: rgb(235, 235, 235);
-    --card-shadow-default: rgb(107, 107, 107);
-    --card-shadow-on-hover: darkgrey;
+    --card-btn-text-color: #2F2F4C;
+    --card-background-color: #F3F3F8;
+    --card-shadow-default: #6a6a8bea;
+    --card-shadow-on-hover: #A1A1C5;
     --card-detail-color: var(--main-color);
     --badge-max-width: 20vw;
     --badge-max-height: 20vw;
@@ -49,6 +49,7 @@ a, a:visited, a:hover, a:active {
 
 h1, h2, h3, h4, h5, h6 {
     font-size: var(--main-font-size);
+    color: var(--main-color);
 }
 
 p {
@@ -67,8 +68,12 @@ svg {
 
 #root main {
     padding: var(--main-content-padding);
-    max-width: 75vw;
+    max-width: 80vw;
     align-self: center;
+}
+
+ul {
+    list-style-type: none;
 }
 
 @media screen and (max-width: 1600px) {
