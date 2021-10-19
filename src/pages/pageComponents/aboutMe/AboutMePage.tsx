@@ -1,16 +1,16 @@
-import React from "react";
-import getHeaderMenuData from "../datasourceGetters/getHeaderMenuData";
-import StackInfoCard from "../../components/modelData/stackInfoCard/StackInfoCard";
-import getAboutMeData from "../datasourceGetters/getAboutMeData";
+import React from 'react';
 import './AboutMePage.css';
-import HeaderMenu from "../../components/gui/headerMenu/HeaderMenu";
-import StackInfo from "../../model/stackInfo/StackInfo";
-import { StackColor } from "./AboutMeData";
-import CardContentHolder from "../../components/gui/cardContentHolder/CardContentHolder";
+import getHeaderMenuData from '../../datasourceGetters/getHeaderMenuData';
+import getAboutMeData from '../../datasourceGetters/getAboutMeData';
+import StackInfoCard from '../../../components/modelData/stackInfoCard/StackInfoCard';
+import HeaderMenu from '../../../components/gui/headerMenu/HeaderMenu';
+import StackInfo from '../../../model/stackInfo/StackInfo';
+import { StackColor } from './AboutMeData';
+import CardContentHolder from '../../../components/gui/cardContentHolder/CardContentHolder';
 const data = getAboutMeData();
 const headerData = getHeaderMenuData();
 
-export default function AboutMePage() : React.ReactElement {
+export default function AboutMePage(): React.ReactElement {
     function createCardFromInfo(info: StackInfo, style?: StackColor, smallbadge?: boolean) {
         const glow = !!style?.glow;
         const color = style?.color;

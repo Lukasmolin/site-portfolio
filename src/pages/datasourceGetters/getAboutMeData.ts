@@ -1,5 +1,5 @@
-import AboutMeData from "../aboutMe/AboutMeData";
-import AboutMeDatasource from "../../datasource/AboutMeDatasource";
+import AboutMeData from '../pageComponents/aboutMe/AboutMeData';
+import AboutMeDatasource from '../../datasource/AboutMeDatasource';
 
 const aboutMeData = new AboutMeDatasource();
 

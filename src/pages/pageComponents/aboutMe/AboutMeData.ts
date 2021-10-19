@@ -1,9 +1,10 @@
-import StackInfo from "../../model/stackInfo/StackInfo";
+import StackInfo from '../../../model/stackInfo/StackInfo';
 
 export interface StackColor {
     color?: string;
     glow?: boolean;
 }
+
 export default interface AboutMeData {
     title: string;
     text: string;

@@ -43,50 +43,42 @@ h1.aboutMePageHeader {
     height: -webkit-fill-available;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
     .technologies .aboutMePageContent>div {
         min-width: 50%;
         max-width: 50%;
     }
-
     .technologies .aboutMePageContent .left {
         padding: 0px 5px 0px 0px;
         order: 3;
     }
-    
     .technologies .aboutMePageContent .right {
         padding: 0px 0px 0px 5px;
         order: 4;
     }
-    
     .technologies .aboutMePageContent .centerLeft {
         padding: 0px 5px 0px 0px;
         order: 1;
     }
-    
     .technologies .aboutMePageContent .centerRight {
         padding: 0px 0px 0px 5px;
         order: 2;
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     .technologies .aboutMePageContent>div {
         min-width: 100%;
     }
-
     .technologies .aboutMePageContent .left {
         padding: 0px;
     }
-    
     .technologies .aboutMePageContent .right {
         padding: 0px;
     }
-    
     .technologies .aboutMePageContent .centerLeft {
         padding: 0px;
     }
-    
     .technologies .aboutMePageContent .centerRight {
         padding: 0px;
     }

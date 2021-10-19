@@ -1,8 +1,8 @@
 import React from 'react';
-import CardContentHolder from '../../components/gui/cardContentHolder/CardContentHolder';
-import HeaderMenu from '../../components/gui/headerMenu/HeaderMenu';
-import getHeaderMenuData from '../datasourceGetters/getHeaderMenuData';
-import getWorkResumeData from '../datasourceGetters/getWorkResumeData';
+import CardContentHolder from '../../../components/gui/cardContentHolder/CardContentHolder';
+import HeaderMenu from '../../../components/gui/headerMenu/HeaderMenu';
+import getHeaderMenuData from '../../datasourceGetters/getHeaderMenuData';
+import getWorkResumeData from '../../datasourceGetters/getWorkResumeData';
 import WorkResumeInfoCard from './workResumeInfoCard/WorkResumeInfoCard';
 import './WorkResumePage.css';
 import WorkResumeTitle from './workResumeTitle/WorkResumeTitle';
@@ -10,7 +10,7 @@ import WorkResumeTitle from './workResumeTitle/WorkResumeTitle';
 const menuData = getHeaderMenuData();
 const data = getWorkResumeData();
 const { title, quote, mainObjective, experiencesHeading, experiences,
-        educationHeading, education, softSkillsHeading, softSkills } = data;
+    educationHeading, education, softSkillsHeading, softSkills } = data;
 
 export default function WorkResumePage(): React.ReactElement {
     return <>
@@ -22,7 +22,7 @@ export default function WorkResumePage(): React.ReactElement {
             <section className='workResumeQuote'>
                 <figure>
                     <blockquote>
-                        "{quote.text}"
+                        '{quote.text}'
                     </blockquote>
                     <figcaption>{quote.authorName}</figcaption>
                 </figure>

@@ -1,7 +1,7 @@
-import React from "react";
-import getHeaderMenuData from "../datasourceGetters/getHeaderMenuData";
+import React from 'react';
+import getHeaderMenuData from '../../datasourceGetters/getHeaderMenuData';
 import './HomePage.css';
-import HeaderButton from "../../components/gui/headerButton/HeaderButton";
+import HeaderButton from '../../../components/gui/headerButton/HeaderButton';
 
 const menuData = getHeaderMenuData();
 

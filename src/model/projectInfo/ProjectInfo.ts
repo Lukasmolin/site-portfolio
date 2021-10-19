@@ -1,4 +1,4 @@
-import Tech from "../tech/Tech";
+import Tech from '../tech/Tech';
 
 export default interface ProjectInfo {
     projectTitle: string;

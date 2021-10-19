@@ -1,10 +1,9 @@
-import JavaLogo from "./JavaLogo.svg";
-import NodeLogo from "./NodeLogo.svg";
-import ToolsIcon from "./ToolsIcon.svg";
-import FrontendIcon from "./FrontendIcon.svg";
-import DeployIcon from "./DeployIcon.svg";
-import DatabaseIcon from "./DatabaseIcon.svg";
-
+import JavaLogo from './JavaLogo.svg';
+import NodeLogo from './NodeLogo.svg';
+import ToolsIcon from './ToolsIcon.svg';
+import FrontendIcon from './FrontendIcon.svg';
+import DeployIcon from './DeployIcon.svg';
+import DatabaseIcon from './DatabaseIcon.svg';
 
 export default abstract class SVGAssets {
     public static readonly java = JavaLogo;

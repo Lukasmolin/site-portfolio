@@ -1,5 +1,5 @@
-import { HeaderButtonData } from "../components/gui/headerButton/HeaderButton";
-import { HeaderMenuData } from "../components/gui/headerMenu/HeaderMenu";
+import { HeaderButtonData } from '../components/gui/headerButton/HeaderButton';
+import { HeaderMenuData } from '../components/gui/headerMenu/HeaderMenu';
 
 const buttons: Array<HeaderButtonData> = [
     { href: '/sobre', text: 'Sobre mim'},

@@ -1,4 +1,4 @@
-import WorkResumeData from '../pages/workResume/WorkResumeData';
+import WorkResumeData from '../pages/pageComponents/workResume/WorkResumeData';
 
 const title: WorkResumeData['title'] = {
     personName: 'Lucas Molin',
