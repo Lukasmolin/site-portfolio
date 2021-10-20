@@ -5,7 +5,7 @@
     transition: box-shadow .4s;
     background-color: var(--card-background-color);
     border-radius: 10px;
-    color: var(--card-btn-text-color);
+    color: var(--dark-text-color);
 }
 
 .card:hover {

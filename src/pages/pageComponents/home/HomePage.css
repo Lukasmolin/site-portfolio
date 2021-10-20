@@ -15,7 +15,7 @@
     white-space: nowrap;
     padding: 15px;
     font-size: 2em;
-    font-weight: var(--primary-btn-font-weight);
+    font-weight: var(--btn-font-weight);
     color: var(--main-color);
     transition: 0.3s;
 }

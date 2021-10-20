@@ -4,7 +4,7 @@
 
 .button.cardButton>* {
     color: var(--main-color);
-    font-weight: var(--card-btn-font-weight);
+    font-weight: var(--btn-font-weight);
     align-self: center;
 }
 

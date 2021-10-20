@@ -1,5 +1,5 @@
 import React from 'react';
-import SVGIcon from './SVGIcon';
+import SVGIcon from '../SVGElement/SVGIcon';
 import './Badge.css';
 
 export default function Badge(props: { iconFileName: string }) {

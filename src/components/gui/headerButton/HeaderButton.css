@@ -4,7 +4,7 @@
     border: 1px solid var(--main-color);
     background-color: var(--card-background-color);
     color: var(--main-color);
-    font-weight: var(--card-btn-font-weight);
+    font-weight: var(--btn-font-weight);
     font-size: var(--secondary-font-size);
 }
 
