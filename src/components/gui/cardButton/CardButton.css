@@ -1,5 +1,9 @@
 .button.cardButton {
     background-color: var(--card-background-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .button.cardButton>* {

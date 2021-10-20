@@ -1,7 +1,7 @@
 import React from 'react';
-import StackInfo from '../../../model/stackInfo/StackInfo';
-import CardContentHolder, { CardStyle } from '../../gui/cardContentHolder/CardContentHolder';
-import Badge from '../../gui/badge/Badge';
+import StackInfo from '../../../../model/stackInfo/StackInfo';
+import CardContentHolder, { CardStyle } from '../../../../components/gui/cardContentHolder/CardContentHolder';
+import Badge from '../../../../components/gui/badge/Badge';
 import './StackInfoCard.css';
 
 export default function StackInfoCard(props: { stackInfo: StackInfo, highlighColor?: string, smallBadge?: boolean }): React.ReactElement {
