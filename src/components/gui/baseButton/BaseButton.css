@@ -1,7 +1,6 @@
 .button {
     border-radius: 5px;
     display: flex;
-    padding: 20px 30px 20px 30px;
     transition: filter .2s;
     justify-content: space-around;
 }
@@ -16,12 +15,6 @@
 
 .button .buttonIcon {
     display: flex;
-}
-
-@media screen and (max-width: 750px) {
-    .button {
-        padding: 15px 15px 15px 15px;
-    }
 }
 
 

@@ -11,14 +11,14 @@ export default function ProjectInfoCard(props: { projectInfo: ProjectInfo }): Re
         <article className='projectInfoCardContent'>
             <h1>{projectInfo.projectTitle}</h1>
             <p>{projectInfo.projectDescription}</p>
-            <ul>
+            <ul className='techIconsList'>
                 {projectInfo.techs.map(tech => {
                     return <li key={tech.name} className='projectTechIcon'>
-                        {Icon(tech.iconName, tech.name)}
+                        <Icon iconFileName={tech.iconName}></Icon>
                     </li>
                 })}
             </ul>
-            <ul>
+            <ul className='relatedLinksList'>
                 {projectInfo.relatedLinks?.map(link => {
                     return <li key={link.href}>{CardButton({
                         ...link

@@ -12,8 +12,32 @@
 .headerMenuContainer {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     min-width: 80vw;
+}
+
+.headerMenuContainer .socialIcons {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin: 5px;
+    margin-left: auto;
+}
+
+.headerMenuContainer .socialIcons .headerSocialButton {
+    padding: 10px;
+    height: 100%;
+    background-color: var(--card-background-color);
+}
+
+
+.headerMenuContainer .socialIcons svg {
+    fill: var(--main-color);
+}
+
+.headerMenuContainer .socialIcons svg * {
+    fill: var(--main-color);
 }
 
 @media screen and (max-width: 1600px) {
@@ -28,5 +52,8 @@
 @media screen and (max-width: 750px) {
     .headerMenuContainer {
         flex-direction: column;
+    }
+    .headerMenuContainer .socialIcons {
+        margin-left: 5px;
     }
 }

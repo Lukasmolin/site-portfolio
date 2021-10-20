@@ -1,9 +1,9 @@
 .button.cardButton {
+    text-align: center;
     background-color: var(--card-background-color);
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 25px 15px 25px;
 }
 
 .button.cardButton>* {
@@ -20,4 +20,10 @@
 
 .button.cardButton svg * {
     fill: var(--main-color);
+}
+
+@media screen and (max-width: 750px) {
+    .button.cardButton {
+        padding: 10px 15px 10px 15px;
+    }
 }
