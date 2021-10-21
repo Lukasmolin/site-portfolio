@@ -3,7 +3,7 @@ import './ProjectsPage.css';
 import HeaderMenu from '../../../components/gui/headerMenu/HeaderMenu';
 import getHeaderMenuData from '../../datasourceGetters/getHeaderMenuData';
 import getProjectsData from '../../datasourceGetters/getProjectsData';
-import ProjectInfoCard from './projectInfoCard/ProjectInfoCard';
+import ProjectInfoCard from '../../../components/gui/projectInfoCard/ProjectInfoCard';
 
 const menuData = getHeaderMenuData();
 const data = getProjectsData();

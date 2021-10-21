@@ -1,8 +1,8 @@
 import React from 'react';
-import ProjectInfo from '../../../../model/projectInfo/ProjectInfo';
-import CardButton from '../../../../components/gui/cardButton/CardButton';
-import CardContentHolder from '../../../../components/gui/cardContentHolder/CardContentHolder';
-import Icon from '../../../../components/gui/SVGElement/Icon';
+import ProjectInfo from '../../../model/projectInfo/ProjectInfo';
+import CardButton from '../cardButton/CardButton';
+import CardContentHolder from '../cardContentHolder/CardContentHolder';
+import Icon from '../SVGElement/Icon';
 import './ProjectInfoCard.css';
 
 export default function ProjectInfoCard(props: { projectInfo: ProjectInfo }): React.ReactElement {

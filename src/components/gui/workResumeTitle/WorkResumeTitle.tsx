@@ -1,8 +1,8 @@
 import React from 'react';
 import WorkResumeTitleData from './WorkResumeTitleData';
 import './WorkResumeTitle.css';
-import CardContentHolder from '../../../../components/gui/cardContentHolder/CardContentHolder';
-import CardButton from '../../../../components/gui/cardButton/CardButton';
+import CardContentHolder from '../cardContentHolder/CardContentHolder';
+import CardButton from '../cardButton/CardButton';
 
 export default function WorkResumeTitle(props: { data: WorkResumeTitleData }) {
     const { person } = props.data;

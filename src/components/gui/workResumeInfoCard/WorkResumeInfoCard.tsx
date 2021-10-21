@@ -1,6 +1,6 @@
 import React from 'react';
 import './WorkResumeInfoCard.css';
-import CardContentHolder from '../../../../components/gui/cardContentHolder/CardContentHolder';
+import CardContentHolder from '../cardContentHolder/CardContentHolder';
 import WorkResumeInfoCardData from './WorkResumeInfoCardData';
 
 export default function WorkResumeInfoCard(props: { data: WorkResumeInfoCardData, className?: string }) {
@@ -8,9 +8,10 @@ export default function WorkResumeInfoCard(props: { data: WorkResumeInfoCardData
     const { className } = props;
     const appendClass = className ? ' ' + className : '';
 
+    //ToDo: Inject this function dependencies instead of hard coding it
     function createDurationSubtitle() {
         if (!duration)
-            throw Error('Canot create subtitle for undefinde duration');
+            throw Error('Cannot create subtitle for undefined duration');
 
         const formatedStartDate = duration.start.toLocaleDateString('pt-br', { year: 'numeric', month: 'long' });
         const formattedEndDate = duration.end ? duration.end.toLocaleTimeString('pt-br', { year: 'numeric', month: 'long' }) : 'atualmente'

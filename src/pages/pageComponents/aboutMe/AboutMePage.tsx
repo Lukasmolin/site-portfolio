@@ -2,7 +2,7 @@ import React from 'react';
 import './AboutMePage.css';
 import getHeaderMenuData from '../../datasourceGetters/getHeaderMenuData';
 import getAboutMeData from '../../datasourceGetters/getAboutMeData';
-import StackInfoCard from './stackInfoCard/StackInfoCard';
+import StackInfoCard from '../../../components/gui/stackInfoCard/StackInfoCard';
 import HeaderMenu from '../../../components/gui/headerMenu/HeaderMenu';
 import StackInfo from '../../../model/stackInfo/StackInfo';
 import { StackColor } from './AboutMeData';

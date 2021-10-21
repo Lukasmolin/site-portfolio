@@ -1,7 +1,6 @@
 import getHeaderMenuData from '../../datasourceGetters/getHeaderMenuData';
 import './HomePage.css';
 import HeaderMenu from '../../../components/gui/headerMenu/HeaderMenu';
-import TypedFxText from '../../../components/fx/typedFxText/TypedFxText';
 import ConsoleTypedFxText from '../../../components/fx/consoleTypedFxText/ConsoleTypedFxText';
 
 const menuData = getHeaderMenuData();
