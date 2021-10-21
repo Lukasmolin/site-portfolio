@@ -1,21 +1,18 @@
-import React from 'react';
 import getHeaderMenuData from '../../datasourceGetters/getHeaderMenuData';
 import './HomePage.css';
-import HeaderButton from '../../../components/gui/headerButton/HeaderButton';
+import HeaderMenu from '../../../components/gui/headerMenu/HeaderMenu';
+import TypedFxText from '../../../components/fx/typedFxText/TypedFxText';
+import ConsoleTypedFxText from '../../../components/fx/consoleTypedFxText/ConsoleTypedFxText';
 
 const menuData = getHeaderMenuData();
 
+
 export default function HomePage(): React.ReactElement {
+    
     return <>
+        <HeaderMenu data={menuData}></HeaderMenu>
         <main className='homePage'>
-            {menuData.buttons
-                .filter(btn => btn.href !== '/home')
-                .map(btn => {
-                    return <HeaderButton
-                        href={btn.href} text={btn.text} key={btn.text}
-                    ></HeaderButton>;
-                })
-            }
+            <h1><ConsoleTypedFxText>Oi, eu sou o Lucas ;)</ConsoleTypedFxText></h1>
         </main>
     </>
 }
