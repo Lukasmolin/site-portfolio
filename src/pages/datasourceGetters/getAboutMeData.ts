@@ -1,8 +1,6 @@
 import AboutMeData from '../pageComponents/aboutMe/AboutMeData';
-import AboutMeDatasource from '../../datasource/AboutMeDatasource';
-
-const aboutMeData = new AboutMeDatasource();
+import AboutMeDatasource from '../../datasource/aboutMeDatasource';
 
 export default function getAboutMeData(): AboutMeData {
-    return aboutMeData;
+    return AboutMeDatasource;
 };

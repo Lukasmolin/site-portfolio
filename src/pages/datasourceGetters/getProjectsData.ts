@@ -1,5 +1,5 @@
 import ProjectsPageData from "../pageComponents/projects/ProjectsData";
-import ProjectInfoDatasource from '../../datasource/ProjectInfoDatasource';
+import ProjectInfoDatasource from '../../datasource/projectInfoDatasource';
 
 const projects = ProjectInfoDatasource;
 

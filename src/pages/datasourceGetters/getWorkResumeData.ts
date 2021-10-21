@@ -1,9 +1,9 @@
 import WorkResumeData from '../pageComponents/workResume/WorkResumeData';
-import WorkResumeDatasource from '../../datasource/WorkResumeDatasource';
-import OwnerDatasource from '../../datasource/OwnerDatasource';
+import WorkResumeDatasource from '../../datasource/workResumeDatasource';
+import ownerDatasource from '../../datasource/ownerDatasource';
 
 const workResume = WorkResumeDatasource;
-const person = OwnerDatasource;
+const person = ownerDatasource;
 
 export default function getWorkResumeData(): WorkResumeData {
     return {

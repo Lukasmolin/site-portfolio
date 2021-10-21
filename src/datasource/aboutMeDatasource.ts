@@ -61,18 +61,20 @@ const nodeBackendStyle: StackColor = {
     color: '#339933'
 };
 
-export default class AboutMeDatasource implements AboutMeData {
-    public title = title;
-    public text = description;
-    public cardsTitle = cardsTitle;
-    public cards = {
+const aboutMeDatasource: AboutMeData = {
+    title : title,
+    text : description,
+    cardsTitle : cardsTitle,
+    cards : {
         left: { up: frontEnd, down: otherTools },
         centerLeft: nodeBackend,
         centerRight: javaBackend,
         right: { up: persistence, down: deploy }
-    }
-    public style = {
+    },
+    style : {
         centerLeft: nodeBackendStyle,
         centerRight: javaBackendStyle
     }
 }
+
+export default aboutMeDatasource;

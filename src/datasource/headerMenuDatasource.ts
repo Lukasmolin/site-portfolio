@@ -1,14 +1,17 @@
 import { HeaderButtonData } from '../components/gui/headerButton/HeaderButton';
 import { HeaderMenuData } from '../components/gui/headerMenu/HeaderMenu';
-import owner from './OwnerDatasource';
+import ownerDatasource from './ownerDatasource';
 
 const buttons: Array<HeaderButtonData> = [
-    { href: '/about', text: 'Sobre mim'},
+    { href: '/home', text: 'Home'},
+    { href: '/about', text: 'Sobre'},
     { href: '/projects', text: 'Projetos'},
     { href: '/resume', text: 'Currículo' }
 ];
 
-export default class HeaderMenuButtonsDatasource implements HeaderMenuData {
-    public readonly buttons = buttons;
-    public readonly social = owner.social;
+
+const headerMenuDatasource: HeaderMenuData = {
+    buttons : buttons,
+    social : ownerDatasource.social
 }
+export default headerMenuDatasource;

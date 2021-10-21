@@ -9,8 +9,6 @@ export default function ConsoleTypedFxText(props: { children: string }) : React.
             const style = cursor.current?.style;
             if(style)
                 style.color = style.color === 'rgba(0, 0, 0, 0)' ? '' : 'rgba(0, 0, 0, 0)';
-
-            console.log(style?.color);
         }
         const interval = setInterval(() => toggleCursor(), 500);
         const cleanUp = () => {

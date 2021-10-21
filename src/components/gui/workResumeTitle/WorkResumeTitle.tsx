@@ -3,13 +3,12 @@ import WorkResumeTitleData from './WorkResumeTitleData';
 import './WorkResumeTitle.css';
 import CardContentHolder from '../cardContentHolder/CardContentHolder';
 import CardButton from '../cardButton/CardButton';
+import ProfilePicture from '../profilePicture/ProfilePicture';
 
 export default function WorkResumeTitle(props: { data: WorkResumeTitleData }) {
     const { person } = props.data;
     return <CardContentHolder className='workResumeCard'>
-        <div className='profilePic'>
-            <img src={person.profilePictureUrl} alt='Profile' />
-        </div>
+        <ProfilePicture imgUrl={person.profilePictureUrl}></ProfilePicture>
         <div className='content'>
             <div>
                 <div className='personName'>{person.name}</div>

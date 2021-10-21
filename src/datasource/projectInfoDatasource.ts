@@ -1,27 +1,5 @@
 import ProjectInfo from "../model/projectInfo/ProjectInfo";
-import Tech from "../model/tech/Tech";
-
-export abstract class Techs {
-    public static readonly java: Tech = {
-        category: 'Back-end',
-        iconName: 'java',
-        name: 'Java'
-    }
-
-    public static readonly node: Tech = {
-        category: 'Back-end',
-        iconName: 'node',
-        name: 'Node'
-    }
-
-    /*
-    Typescript, Javascript, HTML, CSS
-    React, Thymeleaf, Bootstrap
-    Spring, Express, JPA, TypeORM, JDBC, Knex
-    jUnit, Mockito, Jest, Selenium
-    NPM, Gradle, Docker, AWS
-    */
-}
+import { Techs } from "./Techs";
 
 const projects: ProjectInfo[] = [
     {
