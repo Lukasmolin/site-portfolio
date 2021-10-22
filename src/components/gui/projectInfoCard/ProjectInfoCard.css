@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+.projectInfoCard h1{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
 .projectInfoCard .projectInfoCardContent {
     display: flex;
     flex-direction: column;
@@ -35,6 +40,9 @@
 
 .projectInfoCard .projectInfoCardContent ul.techIconsList {
     display: flex;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    justify-content: center;
     padding: 5px;
     flex-wrap: wrap;
 }

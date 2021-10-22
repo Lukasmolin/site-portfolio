@@ -15,8 +15,8 @@ const ownerDatasource: Person = {
     social: [
         {
             label: 'Github',
-            href: 'https://github.com',
-            iconName: 'frontend'
+            href: 'https://github.com/lukasmolin',
+            iconName: 'github'
         }, {
             label: 'LinkedIN',
             href: 'https://linkedin.com',
