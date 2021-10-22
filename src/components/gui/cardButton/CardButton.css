@@ -2,7 +2,6 @@
     text-align: center;
     background-color: var(--card-background-color);
     display: flex;
-    flex-wrap: wrap;
     padding: 15px 25px 15px 25px;
 }
 
@@ -10,6 +9,10 @@
     color: var(--main-color);
     font-weight: var(--btn-font-weight);
     align-self: center;
+}
+
+.button.cardButton .buttonIcon {
+    margin-left: auto;
 }
 
 .button.cardButton svg {
