@@ -18,13 +18,9 @@ const ownerDatasource: Person = {
             href: 'https://github.com/lukasmolin',
             iconName: 'github'
         }, {
-            label: 'LinkedIN',
-            href: 'https://linkedin.com',
-            iconName: 'deploy'
-        }, {
-            label: 'Whatsapp',
-            href: 'https://google.com',
-            iconName: 'deploy'
+            label: 'LinkedIn',
+            href: 'https://www.linkedin.com/in/lucas-molin-dev/',
+            iconName: 'linkedin'
         }
     ]
 };

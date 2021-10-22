@@ -68,6 +68,30 @@ const workResumeDatasource: WorkResume = {
                 `Informatização da gestão de processos judiciais, atividades acadêmicas e fluxo interno do Núcleo onde executo um amplo espectro de tarefas desde a análise de requisitos, desenvolvimento com Spring, Hibernate (JPA), Postgres e Thymeleaf, elaboração de testes com JUnit, Mockito e Selenium até a implantação com Docker na AWS EC2 em Linux Debian.`
             ]
         }]
+    }, {
+        label: 'otherCourses',
+        heading: `Cursos livres`,
+        items: [{
+            heading: `Curso de C# Básico - TreinaWeb`,
+            duration: {
+                start: new Date(2017, 9, 28),
+                end: new Date(2017, 10, 26)
+            },
+            referenceLink: {
+                href: 'https://www.treinaweb.com.br/certificado/XJ8YD4AJ',
+                label: 'Certificado'
+            }
+        }, {
+            heading: `Lógica Orientada a Objetos Completo - TreinaWeb`,
+            duration: {
+                start: new Date(2017, 4, 3),
+                end: new Date(2017, 4, 6)
+            },
+            referenceLink: {
+                href: 'https://www.treinaweb.com.br/certificado/W668OGI4',
+                label: 'Certificado'
+            }
+        }]
     }]
 }
 

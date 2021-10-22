@@ -10,8 +10,10 @@ export default function BaseButton(props: { text?: string, href: string, classNa
     const externalLink = href.startsWith('http');
     const toLink = externalLink ? undefined : href;
     const externalRedirect = !externalLink ? undefined : () => {
-        window.location.href = href;
-        return null;
+        window.open(
+            href,
+            '_blank' // <- This is what makes it open in a new window.
+        );
     };
 
     return <Link className={'button' + toAppendClass} to={{ pathname: toLink }} onClick={externalRedirect}>

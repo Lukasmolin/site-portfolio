@@ -27,7 +27,7 @@ export default function WorkResumePage(): React.ReactElement {
                 return <section key={section.label}>
                     {section.heading && <h1>{section.heading}</h1>}
                     {section.items.map((item, index) => {
-                        const key = item.content[0] ? item.content[0] : index;
+                        const key = item.content && item.content[0] ? item.content[0] : index;
                         return <WorkResumeInfoCard 
                             key={key}
                             data={item}

@@ -22,6 +22,7 @@ import GradleLogo from './GradleLogo.svg';
 import YoutubeLogo from './YoutubeLogo.svg';
 import NPMLogo from './NPMLogo.svg';
 import Junit5Logo from './Junit5Logo.svg';
+import LinkedInLogo from './LinkedInLogo.svg';
 
 export default abstract class SVGAssets {
     public static readonly java = JavaLogo;
@@ -47,6 +48,8 @@ export default abstract class SVGAssets {
     
     public static readonly github = GithubLogo;
     public static readonly youtube = YoutubeLogo;
+    public static readonly linkedin = LinkedInLogo;
+
     public static readonly tool = ToolsIcon;
     public static readonly frontend = FrontendIcon;
     public static readonly deploy = DeployIcon;

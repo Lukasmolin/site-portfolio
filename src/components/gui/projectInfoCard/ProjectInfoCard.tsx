@@ -9,7 +9,7 @@ export default function ProjectInfoCard(props: { projectInfo: ProjectInfo }): Re
     const { projectInfo } = props;
     return <CardContentHolder className='projectInfoCard'>
         <article className='projectInfoCardContent'>
-            <h1>{projectInfo.projectTitle}</h1>
+            <h1><span>{projectInfo.projectTitle}</span></h1>
             <p>{projectInfo.projectDescription}</p>
             <ul className='techIconsList'>
                 {projectInfo.techs.map(tech => {

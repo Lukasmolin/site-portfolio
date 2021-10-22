@@ -1,8 +1,9 @@
 .button.cardButton {
     text-align: center;
-    background-color: var(--card-background-color);
+    background-color: var(--main-background-color);
     display: flex;
     padding: 15px 25px 15px 25px;
+    margin-top: 10px;
 }
 
 .button.cardButton>* {

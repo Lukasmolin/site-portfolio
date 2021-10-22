@@ -6,6 +6,6 @@ export default interface WorkResumeItem {
         start: Date;
         end?: Date;
     };
-    content: string[];
+    content?: string[];
     referenceLink?: WebLink;
 }
