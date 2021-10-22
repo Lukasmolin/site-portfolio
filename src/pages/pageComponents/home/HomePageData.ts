@@ -1,6 +1,6 @@
 import StackInfo from "../../../model/stackInfo/StackInfo";
 
-export default interface HomeData {
+export default interface HomePageData {
     welcomeMessage: string;
     aboutMe: string;
     profilePicUrl: string;

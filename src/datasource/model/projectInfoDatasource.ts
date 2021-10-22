@@ -1,7 +1,7 @@
-import ProjectInfo from "../model/projectInfo/ProjectInfo";
+import ProjectInfo from "../../model/projectInfo/ProjectInfo";
 import { Techs } from "./Techs";
 
-const projects: ProjectInfo[] = [
+const projectInfoDatasource: ProjectInfo[] = [
     {
         projectTitle: `Esse portfolio`,
         projectDescription: `Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
@@ -86,4 +86,4 @@ const projects: ProjectInfo[] = [
     }
 ];
 
-export default projects;
+export default projectInfoDatasource;

@@ -1,4 +1,4 @@
-import StackInfo from "../model/stackInfo/StackInfo";
+import StackInfo from "../../model/stackInfo/StackInfo";
 
 const stackInfoDatasource: StackInfo[] = [
     {

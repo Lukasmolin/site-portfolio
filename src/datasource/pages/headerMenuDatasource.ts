@@ -1,6 +1,6 @@
-import { HeaderButtonData } from '../components/gui/headerButton/HeaderButton';
-import { HeaderMenuData } from '../components/gui/headerMenu/HeaderMenu';
-import ownerDatasource from './ownerDatasource';
+import { HeaderButtonData } from '../../components/gui/headerButton/HeaderButton';
+import { HeaderMenuData } from '../../components/gui/headerMenu/HeaderMenu';
+import ownerDatasource from '../model/ownerDatasource';
 
 const buttons: Array<HeaderButtonData> = [
     { href: '/home', text: 'Home'},
@@ -8,7 +8,6 @@ const buttons: Array<HeaderButtonData> = [
     { href: '/projects', text: 'Projetos'},
     { href: '/resume', text: 'Currículo' }
 ];
-
 
 const headerMenuDatasource: HeaderMenuData = {
     buttons : buttons,

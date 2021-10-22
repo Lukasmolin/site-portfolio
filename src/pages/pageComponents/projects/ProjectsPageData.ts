@@ -1,5 +1,5 @@
 import ProjectInfo from '../../../model/projectInfo/ProjectInfo';
 
-export default interface ProjectsData {
+export default interface ProjectsPageData {
     projects: ProjectInfo[];
 }

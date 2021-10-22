@@ -1,4 +1,4 @@
-import Person from "../model/person/Person";
+import Person from "../../model/person/Person";
 
 const ownerDatasource: Person = {
     name : `Lucas Molin`,

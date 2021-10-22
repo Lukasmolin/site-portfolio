@@ -1,4 +1,4 @@
-import Tech from "../model/tech/Tech"
+import Tech from "../../model/tech/Tech"
 
 export abstract class Techs {
     public static readonly java: Tech = {

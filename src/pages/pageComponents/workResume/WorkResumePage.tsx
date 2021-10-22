@@ -1,13 +1,13 @@
 import React from 'react';
 import HeaderMenu from '../../../components/gui/headerMenu/HeaderMenu';
 import getHeaderMenuData from '../../datasourceGetters/getHeaderMenuData';
-import getWorkResumeData from '../../datasourceGetters/getWorkResumeData';
+import getWorkResumePageData from '../../datasourceGetters/getWorkResumePageData';
 import WorkResumeInfoCard from '../../../components/gui/workResumeInfoCard/WorkResumeInfoCard';
 import './WorkResumePage.css';
 import WorkResumeTitle from '../../../components/gui/workResumeTitle/WorkResumeTitle';
 
 const menuData = getHeaderMenuData();
-const data = getWorkResumeData();
+const data = getWorkResumePageData();
 const { person, workResume } = data;
 
 export default function WorkResumePage(): React.ReactElement {

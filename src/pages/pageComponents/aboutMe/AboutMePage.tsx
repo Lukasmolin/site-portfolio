@@ -1,12 +1,12 @@
 import React from 'react';
 import './AboutMePage.css';
 import getHeaderMenuData from '../../datasourceGetters/getHeaderMenuData';
-import getAboutMeData from '../../datasourceGetters/getAboutMeData';
+import getAboutMePageData from '../../datasourceGetters/getAboutMePageData';
 import StackInfoCard from '../../../components/gui/stackInfoCard/StackInfoCard';
 import HeaderMenu from '../../../components/gui/headerMenu/HeaderMenu';
 import StackInfo from '../../../model/stackInfo/StackInfo';
 import CardContentHolder from '../../../components/gui/cardContentHolder/CardContentHolder';
-const data = getAboutMeData();
+const data = getAboutMePageData();
 const headerData = getHeaderMenuData();
 
 export default function AboutMePage(): React.ReactElement {

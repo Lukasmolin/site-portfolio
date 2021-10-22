@@ -1,6 +1,6 @@
 import { HeaderMenuData } from '../../components/gui/headerMenu/HeaderMenu';
-import HeaderMenuDatasource from '../../datasource/headerMenuDatasource';
+import headerMenuDatasource from '../../datasource/pages/headerMenuDatasource';
 
 export default function getHeaderMenuData(): HeaderMenuData {
-    return HeaderMenuDatasource;
+    return headerMenuDatasource;
 }

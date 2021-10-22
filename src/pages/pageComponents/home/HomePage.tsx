@@ -2,14 +2,14 @@ import getHeaderMenuData from '../../datasourceGetters/getHeaderMenuData';
 import './HomePage.css';
 import HeaderMenu from '../../../components/gui/headerMenu/HeaderMenu';
 import ConsoleTypedFxText from '../../../components/fx/consoleTypedFxText/ConsoleTypedFxText';
-import getHomeData from '../../datasourceGetters/getHomeData';
+import getHomePageData from '../../datasourceGetters/getHomePageData';
 import CardContentHolder from '../../../components/gui/cardContentHolder/CardContentHolder';
 import StackInfoCard from '../../../components/gui/stackInfoCard/StackInfoCard';
 import StackInfo from '../../../model/stackInfo/StackInfo';
 import ProfilePicture from '../../../components/gui/profilePicture/ProfilePicture';
 
 const menuData = getHeaderMenuData();
-const data = getHomeData();
+const data = getHomePageData();
 
 export default function HomePage(): React.ReactElement {
     const { welcomeMessage, aboutMe, profilePicUrl } = data;

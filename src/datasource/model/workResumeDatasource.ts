@@ -1,6 +1,6 @@
-import WorkResume from '../model/workResume/WorkResume';
+import WorkResume from '../../model/workResume/WorkResume';
 
-const workResume: WorkResume = {
+const workResumeDatasource: WorkResume = {
     owner: {
         name: `Lucas Molin`,
         aboutMe: ``, //Todo
@@ -71,4 +71,4 @@ const workResume: WorkResume = {
     }]
 }
 
-export default workResume;
+export default workResumeDatasource;

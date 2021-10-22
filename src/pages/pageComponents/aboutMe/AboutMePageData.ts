@@ -1,6 +1,6 @@
 import StackInfo from '../../../model/stackInfo/StackInfo';
 
-export default interface AboutMeData {
+export default interface AboutMePageData {
     title: string;
     text: string;
     cardsTitle: string;
