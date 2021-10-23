@@ -72,7 +72,7 @@ const workResumeDatasource: WorkResume = {
         label: 'otherCourses',
         heading: `Cursos livres`,
         items: [{
-            heading: `Curso de C# Básico - TreinaWeb`,
+            heading: `TreinaWeb - C# Básico`,
             duration: {
                 start: new Date(2017, 9, 28),
                 end: new Date(2017, 10, 26)
@@ -82,7 +82,7 @@ const workResumeDatasource: WorkResume = {
                 label: 'Certificado'
             }
         }, {
-            heading: `Lógica Orientada a Objetos Completo - TreinaWeb`,
+            heading: `TreinaWeb - Lógica Orientada a Objetos`,
             duration: {
                 start: new Date(2017, 4, 3),
                 end: new Date(2017, 4, 6)

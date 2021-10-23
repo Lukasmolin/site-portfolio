@@ -3,14 +3,14 @@ import StackInfo from "../../model/stackInfo/StackInfo";
 const stackInfoDatasource: StackInfo[] = [
     {
         badgeIcon: 'java',
-        title: 'Java Backend',
+        title: 'Java Back-end',
         color: '#E86F00',
         items: [
             'Java', 'Spring Boot', 'JDBC', 'JPA', 'jUnit', 'Mockito', 'Gradle'
         ]
     },{
         badgeIcon: 'node',
-        title: 'Node Backend',
+        title: 'Node Back-end',
         color: '#339933',
         items: [
             'Typescript', 'Javascript', 'Knex', 'TypeORM', 'Jest', 'NPM'

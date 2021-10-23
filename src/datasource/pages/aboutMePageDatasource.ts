@@ -5,7 +5,7 @@ import AboutMePageData from '../../pages/pageComponents/aboutMe/AboutMePageData'
 const aboutMePageDatasource: AboutMePageData = {
     title:`Sobre mim:`,
     text: ownerDatasource.aboutMe,
-    cardsTitle : `Meu stack`,
+    cardsTitle : `O que eu uso:`,
     cards : {
         left: { up: stackInfoDatasource[2], down: stackInfoDatasource[3] },
         centerLeft: stackInfoDatasource[0],

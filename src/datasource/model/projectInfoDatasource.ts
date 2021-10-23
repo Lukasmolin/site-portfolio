@@ -4,7 +4,7 @@ import { Techs } from "./Techs";
 const projectInfoDatasource: ProjectInfo[] = [
     {
         projectTitle: `Simples vinhos`,
-        projectDescription: `Site responsivo com preços e contatos que desenvolvi para um serviço local de delivery de vinhos utilizando Typescript e React.`,
+        projectDescription: `Site responsivo com preços e contatos que desenvolvi para um serviço local de delivery de vinhos.`,
         techs: [Techs.typescript, Techs.react, Techs.html5, Techs.css3, Techs.npm],
         relatedLinks: [{
             href: 'https://lukasmolin.github.io/simples-vinhos-web/',
@@ -17,8 +17,12 @@ const projectInfoDatasource: ProjectInfo[] = [
         }]
     }, {
         projectTitle: `Núcleo de Práticas Jurídicas`,
-        projectDescription: `Sistema de gestão interna núcleo de apoio a práticas jurídicas da UFJF. Entre outras coisas usamos Spring, Thymeleaf, JPA, jUnit e Mockito.`,
-        techs: [Techs.java, Techs.springBoot, Techs.springSecurity, Techs.hibernateJpa, Techs.postgres, Techs.junit, Techs.javascript, Techs.thymeleaf, Techs.html5, Techs.css3, Techs.gradle, Techs.docker],
+        projectDescription: `Sistema de gestão interna núcleo de apoio a práticas jurídicas da UFJF.`,
+        techs: [
+            Techs.java, Techs.springBoot, Techs.springSecurity, Techs.hibernateJpa,
+            Techs.postgres, Techs.junit, Techs.selenium, Techs.javascript, Techs.thymeleaf, Techs.html5,
+            Techs.css3, Techs.gradle, Techs.debian, Techs.docker, Techs.aws
+        ],
         relatedLinks: [{
             href: 'https://github.com/',
             label: 'Vídeo',

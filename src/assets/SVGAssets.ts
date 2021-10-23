@@ -23,6 +23,9 @@ import YoutubeLogo from './YoutubeLogo.svg';
 import NPMLogo from './NPMLogo.svg';
 import Junit5Logo from './Junit5Logo.svg';
 import LinkedInLogo from './LinkedInLogo.svg';
+import AWSLogo from './AWSLogo.svg';
+import SeleniumLogo from './SeleniumLogo.svg';
+import DebianLogo from './DebianLogo.svg';
 
 export default abstract class SVGAssets {
     public static readonly java = JavaLogo;
@@ -43,6 +46,9 @@ export default abstract class SVGAssets {
     public static readonly thymeleaf = ThymeleafLogo;
     public static readonly gradle = GradleLogo;
     
+    public static readonly debian = DebianLogo;
+    public static readonly selenium = SeleniumLogo;
+    public static readonly aws = AWSLogo;
     public static readonly docker = DockerLogo;
     public static readonly postgres = PostgreLogo;
     

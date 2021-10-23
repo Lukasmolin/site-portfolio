@@ -92,5 +92,19 @@ export abstract class Techs {
         iconName: 'npm',
         name: 'NPM'
     }
-
+    public static readonly aws: Tech = {
+        category: 'Deploy',
+        iconName: 'aws',
+        name: 'AWS'
+    }
+    public static readonly selenium: Tech = {
+        category: 'Test',
+        iconName: 'selenium',
+        name: 'Selenium'
+    }
+    public static readonly debian: Tech = {
+        category: 'OS',
+        iconName: 'debian',
+        name: 'Debian'
+    }
 }
