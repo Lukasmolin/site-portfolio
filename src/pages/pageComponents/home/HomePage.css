@@ -1,3 +1,51 @@
-.homePageContent h1 {
-    padding: 20px 0px 0px 0px;
+.homePageContent {
+    margin-top: 25px;
+}
+
+.stackSection {
+    transition: opacity 0.5s;
+}
+
+.stackSection .stackSectionCards {
+    display: flex;
+    justify-content: center;
+}
+
+.stackSection .stackSectionCards ul {
+    justify-content: center;
+    min-width: min-content;
+    width: 100%;
+    display: flex;
+}
+
+.stackSection .stackSectionCards ul li {
+    min-width: min-content;
+    width: 20%;
+    display: flex;
+    margin: 5px;
+}
+
+.stackSection .stackSectionCards ul li>* {
+    width: 100%;
+}
+
+.stackSection .stackSectionCards .favoriteStackCard {
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: var(--secondary-font-size);
+    font-weight: bold;
+}
+
+.stackSection .stackSectionCards ul li svg{
+    fill: var(--main-color);
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.stackSection .stackSectionCards ul li svg *{
+    min-width: 32px;
+    min-height: 32px;
 }

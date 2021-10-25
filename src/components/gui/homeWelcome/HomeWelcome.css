@@ -1,0 +1,59 @@
+.welcomeSection {
+    align-items: flex-start;
+    display: flex;
+}
+
+.welcomeSection {
+    margin-bottom: 10px;
+}
+
+.welcomeSection .consoleStyleText {
+    min-width: 75%;
+    align-self: stretch;
+    color: var(--main-color);
+    font-size: calc(0.7*var(--main-font-size));
+    font-weight: bold;
+    padding: 2% 3% 2% 3%;
+    background-color: var(--card-background-color);
+    border-radius: 10px;
+    box-shadow: 0 0 3px var(--card-shadow-default);
+}
+
+.welcomeSection .profilePic {
+    min-width: 25%;
+    margin-right: 10px;
+    padding: 8px;
+    box-shadow: 0 0 3px var(--card-shadow-default);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--card-background-color);
+    border-radius: 10px;
+    display: flex;
+}
+
+.welcomeSection .profilePic * {
+    min-width: 100%;
+    min-width: 100%;
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (min-width: 1850px) {
+    .welcomeSection .consoleStyleText {
+        font-size: calc(0.85*var(--main-font-size));
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .welcomeSection {
+        flex-direction: column;
+        align-items: center;
+    }
+    .welcomeSection .profilePic {
+        max-width: 30vw;
+        margin-bottom: 10px;
+        margin-right: unset;
+    }
+}

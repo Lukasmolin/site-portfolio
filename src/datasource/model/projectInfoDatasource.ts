@@ -12,7 +12,7 @@ const projectInfoDatasource: ProjectInfo[] = [
             iconName: 'github'
         }, {
             href: 'https://github.com/Lukasmolin/simples-vinhos-web',
-            label: 'Repositório',
+            label: 'Código',
             iconName: 'github'
         }]
     }, {
@@ -34,7 +34,7 @@ const projectInfoDatasource: ProjectInfo[] = [
         techs: [Techs.typescript, Techs.react, Techs.html5, Techs.css3, Techs.npm],
         relatedLinks: [{
             href: 'https://github.com/',
-            label: 'Repositório',
+            label: 'Código',
             iconName: 'github'
         }]
     }

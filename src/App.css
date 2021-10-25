@@ -65,6 +65,7 @@ svg {
 
 #root main {
     padding: var(--main-content-padding);
+    min-width: 60vw;
     max-width: 60vw;
     align-self: center;
 }
@@ -75,6 +76,7 @@ ul {
 
 @media screen and (max-width: 1950px) {
     #root main {
+        min-width: 80vw;
         max-width: 80vw;
     }
 }
@@ -84,6 +86,7 @@ ul {
         --main-content-padding: 0px 50px 0px 50px;
     }
     #root main {
+        min-width: 100%;
         max-width: inherit;
     }
 }
