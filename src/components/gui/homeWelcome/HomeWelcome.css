@@ -13,14 +13,14 @@
     color: var(--main-color);
     font-size: calc(0.7*var(--main-font-size));
     font-weight: bold;
-    padding: 2% 3% 2% 3%;
+    padding: 1em;
     background-color: var(--card-background-color);
     border-radius: 10px;
     box-shadow: 0 0 3px var(--card-shadow-default);
 }
 
 .welcomeSection .profilePic {
-    min-width: 25%;
+    min-width: 20%;
     margin-right: 10px;
     padding: 8px;
     box-shadow: 0 0 3px var(--card-shadow-default);

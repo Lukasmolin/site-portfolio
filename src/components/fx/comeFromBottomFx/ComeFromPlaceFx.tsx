@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function ComeFromBottomFx(props: { children: JSX.Element, from: 'up' | 'down' | 'left' | 'right', allowMoveUp?: boolean, transitionTime?: number, distance?: string }): React.ReactElement {
+export default function ComeFromPlaceFx(props: { children: JSX.Element, from: 'up' | 'down' | 'left' | 'right', allowMoveUp?: boolean, transitionTime?: number, distance?: string }): React.ReactElement {
     const { children, allowMoveUp, transitionTime, distance } = props;
     const [isFxActive, setFxActive] = useState(true);
     if (allowMoveUp && isFxActive)

@@ -3,49 +3,39 @@
 }
 
 .stackSection {
-    transition: opacity 0.5s;
+    transition: opacity 0.6s linear;
 }
 
-.stackSection .stackSectionCards {
-    display: flex;
-    justify-content: center;
+.stackSection h1 {
+    margin-bottom: 10px;
 }
 
-.stackSection .stackSectionCards ul {
-    justify-content: center;
-    min-width: min-content;
-    width: 100%;
-    display: flex;
-}
-
-.stackSection .stackSectionCards ul li {
-    min-width: min-content;
-    width: 20%;
-    display: flex;
-    margin: 5px;
-}
-
-.stackSection .stackSectionCards ul li>* {
-    width: 100%;
-}
-
-.stackSection .stackSectionCards .favoriteStackCard {
-    color: var(--main-color);
+.stackSection .mainStackCards {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: var(--secondary-font-size);
-    font-weight: bold;
 }
 
-.stackSection .stackSectionCards ul li svg{
-    fill: var(--main-color);
-    min-width: 32px;
-    min-height: 32px;
+.stackSection .mainStackCards ul {
+    justify-content: center;
+    min-width: min-content;
+    width: 100%;
+    display: flex;
 }
 
-.stackSection .stackSectionCards ul li svg *{
-    min-width: 32px;
-    min-height: 32px;
+.stackSection .mainStackCards ul li {
+    min-width: 18%;
+    max-width: 18%;
+    display: flex;
+    margin: 10px;
+}
+
+.stackSection .mainStackCards ul li>* {
+    width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    .stackSection .mainStackCards ul li {
+        min-width: 24%;
+        max-width: 25%;
+    }
 }

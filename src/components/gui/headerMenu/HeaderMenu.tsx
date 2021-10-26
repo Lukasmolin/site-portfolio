@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Person from '../../../model/person/Person';
 import BaseButton from '../baseButton/BaseButton';
 import HeaderButton, { HeaderButtonData } from '../headerButton/HeaderButton';
-import Icon from '../SVGElement/Icon';
 import './HeaderMenu.css';
 
 export interface HeaderMenuData {

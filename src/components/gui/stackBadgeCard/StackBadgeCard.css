@@ -1,0 +1,55 @@
+.card.stackBadgeCard {
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: calc(0.6 * var(--secondary-font-size));
+    font-weight: bold;
+}
+
+.card.stackBadgeCard .badge {
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.card.stackBadgeCard .stackBadgeCardLabel {
+    margin-bottom: 15px;
+}
+
+.card.stackBadgeCard svg {
+    fill: var(--main-color);
+    min-width: 8px;
+    min-height: 8px;
+    width: 60%;
+}
+
+.card.stackBadgeCard svg * {
+    min-width: 8px;
+    min-height: 8px;
+}
+
+@media screen and (max-width: 500px) {
+    .stackSection .mainStackCards ul {
+        align-items: center;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 750px) {    
+    .stackSection .mainStackCards ul li {
+        min-width: 25%;
+        max-width: 25%;
+    }
+    .card.stackBadgeCard {
+        padding: 5px;
+        font-size: calc(0.5 * var(--secondary-font-size));
+    }
+    .card.stackBadgeCard .badge {
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+    .card.stackBadgeCard .stackBadgeCardLabel {
+        margin-bottom: 5px;
+    }
+}

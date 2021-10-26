@@ -1,3 +1,4 @@
+import Tech from "../tech/Tech";
 import WebLink from "../webLink/WebLink";
 
 export default interface Person {
@@ -7,4 +8,5 @@ export default interface Person {
     aboutMe: string;
     profilePictureUrl: string;
     social: WebLink[];
+    favoriteStack: Tech[]
 }

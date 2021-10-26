@@ -1,4 +1,5 @@
 import Person from "../../model/person/Person";
+import { Techs } from "./Techs";
 
 const ownerDatasource: Person = {
     name : `Lucas Molin`,
@@ -22,6 +23,11 @@ const ownerDatasource: Person = {
             href: 'https://www.linkedin.com/in/lucas-molin-dev/',
             iconName: 'linkedin'
         }
+    ],
+    favoriteStack: [
+        Techs.react, Techs.javascript, Techs.thymeleaf,
+        Techs.node, Techs.typescript, Techs.java, Techs.spring,
+        Techs.docker, Techs.debian, Techs.postgres
     ]
 };
 

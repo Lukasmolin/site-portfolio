@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-export default function TypedFxText(props: { children: string, finishedCallback?: () => void }) {
+export default function TypedFxText(props: { children: string, finishedCallback?: () => void, keyDelay?: number }) {
     const text = props.children;
-    const { finishedCallback } = props;
+    const { finishedCallback, keyDelay } = props;
     const [displayedText, displayText] = useState('');
 
     useEffect(() => {
@@ -12,8 +12,8 @@ export default function TypedFxText(props: { children: string, finishedCallback?
             
             return;
         }
-        setTimeout(() => displayText(text.substring(0, displayedText.length + 1)), 75);
-    }, [displayedText, text, finishedCallback]);
+        setTimeout(() => displayText(text.substring(0, displayedText.length + 1)), keyDelay ?? 50);
+    }, [displayedText, text, finishedCallback, keyDelay]);
 
     return <>{displayedText}</>;
 }

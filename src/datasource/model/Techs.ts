@@ -45,7 +45,7 @@ export abstract class Techs {
     public static readonly spring: Tech = {
         category: 'Back-end',
         iconName: 'spring',
-        name: 'Spring Framework'
+        name: 'Spring'
     }
     public static readonly springBoot: Tech = {
         category: 'Back-end',

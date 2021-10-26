@@ -1,28 +1,8 @@
 import WorkResume from '../../model/workResume/WorkResume';
+import ownerDatasource from './ownerDatasource';
 
 const workResumeDatasource: WorkResume = {
-    owner: {
-        name: `Lucas Molin`,
-        aboutMe: ``, //Todo
-        adress: `Juiz de Fora, Minas Gerais, Brasil`,
-        role: `Desenvolvedor Web`,
-        profilePictureUrl: `https://avatars.githubusercontent.com/u/38398230?v=4`,
-        social: [
-            {
-                label: 'Github',
-                href: 'https://github.com',
-                iconName: 'frontend'
-            }, {
-                label: 'LinkedIN',
-                href: 'https://linkedin.com',
-                iconName: 'deploy'
-            }, {
-                label: 'Whatsapp',
-                href: 'https://google.com',
-                iconName: 'deploy'
-            }
-        ]
-    },
+    owner: ownerDatasource,
     quote: {
         text: `Em algum lugar, algo incrível está esperando para ser descoberto.`,
         authorName: `Carl Sagan`
