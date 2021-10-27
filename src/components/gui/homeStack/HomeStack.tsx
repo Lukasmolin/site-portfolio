@@ -20,9 +20,12 @@ export default function HomeStack(props: { isContentVisible: boolean, techs: Hom
                     <ComeFromPlaceFx
                         allowMoveUp={isContentVisible}
                         from={moveFromSide || 'down'}
-                        transitionTime={1}
-                    >
-                        <StackBadgeCard iconName={tech.iconName} labelText={tech.name}/>
+                        transitionTime={1}>
+                        <StackBadgeCard
+                            color={tech.standardColor}
+                            iconName={tech.iconName}
+                            labelText={tech.name}
+                        />
                     </ComeFromPlaceFx>
                 </li>;
             })}

@@ -1,5 +1,4 @@
 .card.stackBadgeCard {
-    color: var(--main-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +13,7 @@
 }
 
 .card.stackBadgeCard .stackBadgeCardLabel {
+    color: var(--main-color);
     margin-bottom: 15px;
 }
 

@@ -13,7 +13,10 @@ export default function ProjectInfoCard(props: { projectInfo: ProjectInfo }): Re
             <p>{projectInfo.projectDescription}</p>
             <ul className='techIconsList'>
                 {projectInfo.techs.map(tech => {
-                    return <li key={tech.name} className='projectTechIcon'>
+                    const style = !tech.standardColor ? undefined : {
+                        '--main-color': tech.standardColor
+                    } as React.CSSProperties;
+                    return <li key={tech.name} style={style} className='projectTechIcon'>
                         <Icon iconFileName={tech.iconName}></Icon>
                     </li>
                 })}
