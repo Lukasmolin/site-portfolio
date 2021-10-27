@@ -1,3 +1,4 @@
+import ProjectInfo from "../../../model/projectInfo/ProjectInfo";
 import Tech from "../../../model/tech/Tech";
 
 export default interface HomePageData {
@@ -8,5 +9,9 @@ export default interface HomePageData {
         upperRow: Tech[];
         middleRow: Tech[];
         bottomRow: Tech[];
+    }
+    favoriteProjects: {
+        headingText: string;
+        projects: ProjectInfo[]
     }
 }

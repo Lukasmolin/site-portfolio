@@ -3,7 +3,17 @@
     width: 100%;
 }
 
-.projectInfoCard h1 {
+.projectInfoCardContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.projectInfoCardContent>*:nth-last-child(1) {
+    margin-top: 5px;
+}
+
+.projectInfoCardContent h1 {
     display: flex;
     min-height: calc(3 * var(--secondary-font-size));
     text-align: center;
@@ -14,47 +24,42 @@
     align-content: center;
 }
 
-.projectInfoCard .projectInfoCardContent {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    height: 100%;
+.projectInfoCardContent p {
+    font-size: calc(0.8*var(--secondary-font-size));
+    text-align: center;
+    padding: 0px 7%;
+    margin-bottom: 20px;
 }
 
-.projectInfoCard .projectInfoCardContent>*:nth-last-child(1) {
-    margin-top: auto;
-}
-
-.projectInfoCard .projectInfoCardContent .projectTechIcon svg {
+.projectInfoCardContent .projectTechIcon svg {
     min-width: 32px;
     min-height: 32px;
 }
 
-.projectInfoCard .projectInfoCardContent .projectTechIcon svg {
+.projectInfoCardContent .projectTechIcon svg {
     fill: var(--main-color);
 }
 
-.projectInfoCard .projectInfoCardContent .projectTechIcon svg * {
+.projectInfoCardContent .projectTechIcon svg * {
     fill: var(--main-color);
 }
 
-.projectInfoCard .projectInfoCardContent .projectTechIcon {
+.projectInfoCardContent .projectTechIcon {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
 }
 
-.projectInfoCard .projectInfoCardContent ul.techIconsList {
+.projectInfoCardContent ul.techIconsList {
     display: flex;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: auto;
+    margin-bottom: auto;
     justify-content: center;
-    padding: 5px;
+    padding: 0px 10px;
     flex-wrap: wrap;
 }
 
-.projectInfoCard .projectInfoCardContent ul.techIconsList li {
-    margin: 5px;
-    padding: 8px;
+.projectInfoCardContent ul.techIconsList li {
+    margin: 10px;
     display: flex;
 }

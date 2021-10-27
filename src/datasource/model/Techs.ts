@@ -42,6 +42,12 @@ export abstract class Techs {
         name: 'Node',
         standardColor: '#339933'
     }
+    public static readonly express: Tech = {
+        category: 'Back-end',
+        iconName: 'express',
+        name: 'ExpressJS',
+        standardColor: '#000000'
+    }
     public static readonly react: Tech = {
         category: 'Front-end',
         iconName: 'react',

@@ -1,0 +1,33 @@
+.stackSection {
+    transition: opacity 0.6s linear;
+}
+
+.stackSection .mainStackCards {
+    display: flex;
+    flex-direction: column;
+}
+
+.stackSection .mainStackCards ul {
+    justify-content: center;
+    min-width: min-content;
+    width: 100%;
+    display: flex;
+}
+
+.stackSection .mainStackCards ul li {
+    min-width: 18%;
+    max-width: 18%;
+    display: flex;
+    margin: 10px;
+}
+
+.stackSection .mainStackCards ul li>* {
+    width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    .stackSection .mainStackCards ul li {
+        min-width: 24%;
+        max-width: 25%;
+    }
+}

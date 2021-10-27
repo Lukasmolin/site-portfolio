@@ -8,7 +8,6 @@
     margin-right: var(--project-margin-correction);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .projectsPageContent ul.projectCardsGrid > li {

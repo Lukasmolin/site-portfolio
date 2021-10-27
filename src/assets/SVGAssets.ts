@@ -1,31 +1,31 @@
 import JavaLogo from './JavaLogo.svg';
-import NodeLogo from './NodeLogo.svg';
-import GithubLogo from './GithubLogo.svg';
-
-import ToolsIcon from './ToolsIcon.svg';
-import FrontendIcon from './FrontendIcon.svg';
-import DeployIcon from './DeployIcon.svg';
-import DatabaseIcon from './DatabaseIcon.svg';
-import ReactLogo from './ReactLogo.svg';
-import HTML5Logo from './HTML5Logo.svg';
-import CSS3Logo from './CSS3Logo.svg';
-import TypescriptLogo from './TypescriptLogo.svg';
+import Junit5Logo from './Junit5Logo.svg';
 import SpringFrameworkLogo from './SpringFrameworkLogo.sgv';
 import SpringBootLogo from './SpringBootLogo.svg';
 import SpringSecurityLogo from './SpringSecurityLogo.svg';
 import HibernateJPALogo from './HibernateJPALogo.svg';
-import PostgreLogo from './PostgreLogo.svg';
-import JavascriptLogo from './JavascriptLogo.svg';
 import ThymeleafLogo from './ThymeleafLogo.svg';
-import DockerLogo from './DockerLogo.svg';
 import GradleLogo from './GradleLogo.svg';
-import YoutubeLogo from './YoutubeLogo.svg';
+import TypescriptLogo from './TypescriptLogo.svg';
+import JavascriptLogo from './JavascriptLogo.svg';
+import NodeLogo from './NodeLogo.svg';
+import ExpressLogo from './ExpressLogo.svg';
 import NPMLogo from './NPMLogo.svg';
-import Junit5Logo from './Junit5Logo.svg';
-import LinkedInLogo from './LinkedInLogo.svg';
+import HTML5Logo from './HTML5Logo.svg';
+import CSS3Logo from './CSS3Logo.svg';
+import ReactLogo from './ReactLogo.svg';
+import DockerLogo from './DockerLogo.svg';
+import PostgreLogo from './PostgreLogo.svg';
 import AWSLogo from './AWSLogo.svg';
 import SeleniumLogo from './SeleniumLogo.svg';
 import DebianLogo from './DebianLogo.svg';
+import ToolsIcon from './ToolsIcon.svg';
+import FrontendIcon from './FrontendIcon.svg';
+import DeployIcon from './DeployIcon.svg';
+import DatabaseIcon from './DatabaseIcon.svg';
+import GithubLogo from './GithubLogo.svg';
+import YoutubeLogo from './YoutubeLogo.svg';
+import LinkedInLogo from './LinkedInLogo.svg';
 
 export default abstract class SVGAssets {
     public static readonly java = JavaLogo;
@@ -35,6 +35,7 @@ export default abstract class SVGAssets {
     public static readonly css3 = CSS3Logo;
 
     public static readonly node = NodeLogo;
+    public static readonly express = ExpressLogo;
     public static readonly npm = NPMLogo;
     public static readonly react = ReactLogo;
     
