@@ -17,7 +17,7 @@ const projectInfoDatasource: ProjectInfo[] = [
         }]
     }, {
         projectTitle: `Núcleo de Práticas Jurídicas`,
-        projectDescription: `Sistema de gestão interna núcleo de apoio a práticas jurídicas da UFJF.`,
+        projectDescription: `Sistema de gestão interna, acadêmica e de processos do núcleo de apoio a práticas jurídicas da UFJF.`,
         techs: [
             Techs.java, Techs.springBoot, Techs.springSecurity, Techs.hibernateJpa,
             Techs.postgres, Techs.junit, Techs.selenium, Techs.javascript, Techs.thymeleaf, Techs.html5,

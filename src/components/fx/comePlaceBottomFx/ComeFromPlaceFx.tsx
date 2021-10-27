@@ -9,7 +9,7 @@ export default function ComeFromPlaceFx(props: { children: JSX.Element, from: 'u
     const from = getMarginTransition();
     function getMarginTransition() {
         const { from } = props;
-        switch(from) {
+        switch (from) {
             case 'up': return 'padding-bottom';
             case 'down': return 'padding-top';
             case 'left': return 'padding-right';
@@ -18,7 +18,7 @@ export default function ComeFromPlaceFx(props: { children: JSX.Element, from: 'u
     }
     function getPushedCSSKey() {
         const { from } = props;
-        switch(from) {
+        switch (from) {
             case 'up': return 'paddingBottom';
             case 'down': return 'paddingTop';
             case 'left': return 'paddingRight';
@@ -27,7 +27,7 @@ export default function ComeFromPlaceFx(props: { children: JSX.Element, from: 'u
     }
     const pushedDownCSS: React.CSSProperties = {};
     pushedDownCSS[getPushedCSSKey()] = distance || '20px';
-    
+
     const transitionTimeVar: React.CSSProperties = {
         transition: `${from} ${transitionTime || 0}s`,
         minWidth: 'min-content'

@@ -1,7 +1,7 @@
 import React from "react";
 import Tech from "../../../model/tech/Tech";
 import HomePageData from "../../../pages/pageComponents/home/HomePageData";
-import ComeFromPlaceFx from "../../fx/comeFromBottomFx/ComeFromPlaceFx";
+import ComeFromPlaceFx from "../../fx/comePlaceBottomFx/ComeFromPlaceFx";
 import StackBadgeCard from "../stackBadgeCard/StackBadgeCard";
 import './HomeStack.css';
 
