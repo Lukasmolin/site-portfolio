@@ -3,38 +3,48 @@
     margin-bottom: 25px;
 }
 
+.homePageContent section {
+    transition: opacity 0.6s linear;
+}
+
 .homePageContent h1 {
     text-align: center;
-    margin-bottom: 15px;
+    margin: 15px;
 }
 
-.favoriteProjectsList {
-    display: flex;
-    justify-content: space-around;
-}
-
-.favoriteProjectsList>li {
-    padding: 15px 0px;
-}
-
-.favoriteProjectsList>li:nth-child(2) {
-    min-width: 40%;
-    padding: 0px 15px;
-}
-
-footer {
+.homePageContent footer {
+    transition: opacity 0.6s linear;
     margin: 25px auto;
     max-width: 65%;
 }
 
-footer .socialButtons {
+.homePageContent footer .socialButtons {
     display: flex;
 }
 
-footer .socialButtons .button {
+.homePageContent footer .socialButtons .button {
     width: 100%;
 }
 
-footer .socialButtons .button~.button {
+.homePageContent footer .socialButtons .button~.button {
     margin-left: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .homePageContent footer {
+        max-width: 85%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .homePageContent footer {
+        max-width: unset;
+    }
+    .homePageContent footer .socialButtons {
+        padding-top: 25px;
+        flex-direction: column;
+    }
+    .homePageContent footer .socialButtons .button~.button {
+        margin-left: unset;
+    }
 }

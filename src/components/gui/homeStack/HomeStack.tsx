@@ -5,10 +5,8 @@ import ComeFromPlaceFx from "../../fx/comePlaceBottomFx/ComeFromPlaceFx";
 import StackBadgeCard from "../stackBadgeCard/StackBadgeCard";
 import './HomeStack.css';
 
-export default function HomeStack(props: { isContentVisible: boolean, techs: HomePageData['favoriteTechs'] }): React.ReactElement {
-    const { isContentVisible, techs } = props;
-    const invisibleCSS = { opacity: 0 };
-    const invisibleStyle = !isContentVisible ? invisibleCSS : undefined;
+export default function HomeStack(props: { isContentVisible: boolean, techs: HomePageData['favoriteTechs'], style?: React.CSSProperties }): React.ReactElement {
+    const { isContentVisible, techs, style } = props;
 
     function createRow(techs: Tech[]) {
         return <ul>
@@ -32,7 +30,7 @@ export default function HomeStack(props: { isContentVisible: boolean, techs: Hom
         </ul>;
     }
 
-    return <section className='stackSection' style={invisibleStyle}>
+    return <section className='stackSection' style={style}>
         <h1>{techs.headingText}</h1>
         <div className='mainStackCards'>
             {createRow(techs.upperRow)}

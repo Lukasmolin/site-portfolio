@@ -1,0 +1,53 @@
+.favoriteProjectsList {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0px;
+}
+
+.favoriteProjectsList>li {
+    padding: 15px 0px;
+}
+
+.favoriteProjectsList>li:nth-child(2) {
+    min-width: 40%;
+    padding: 0px 15px;
+}
+
+@media screen and (max-width: 1000px) {
+    .favoriteProjectsList {
+        flex-wrap: wrap;
+    }
+    .favoriteProjectsList>li:first-child {
+        padding-right: 6px;
+    }
+    .favoriteProjectsList>li:last-child {
+        padding-left: 6px;
+    }
+    .favoriteProjectsList>li {
+        width: 50%;
+        order: 2;
+        padding: 0px;
+    }
+    .favoriteProjectsList>li:nth-child(2) {
+        min-width: 100%;
+        order: 1;
+        padding: 0px;
+        padding-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .favoriteProjectsList {
+        flex-wrap: wrap;
+    }
+    .favoriteProjectsList>li:first-child {
+        padding-right: unset;
+    }
+    .favoriteProjectsList>li:last-child {
+        padding-left: unset;
+    }
+    .favoriteProjectsList>li {
+        min-width: 100%;
+        padding-bottom: 12px;
+    }
+}
