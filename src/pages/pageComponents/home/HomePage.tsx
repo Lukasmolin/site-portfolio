@@ -5,16 +5,14 @@ import getHomePageData from '../../datasourceGetters/getHomePageData';
 import React, { useState } from 'react';
 import HomeWelcome from '../../../components/gui/homeWelcome/HomeWelcome';
 import HomeStack from '../../../components/gui/homeStack/HomeStack';
-import ProjectInfoCard from '../../../components/gui/projectInfoCard/ProjectInfoCard';
-import CardButton from '../../../components/gui/cardButton/CardButton';
-import CardContentHolder from '../../../components/gui/cardContentHolder/CardContentHolder';
 import HomeFavoriteProjects from '../../../components/gui/homeFavoriteProjects/HomeFavoriteProjects';
+import HomeFooter from '../../../components/gui/homeFooter/HomeFooter';
 
 const menuData = getHeaderMenuData();
 const data = getHomePageData();
 
 export default function HomePage(): React.ReactElement {
-    const { welcomeMessage, profilePicUrl, favoriteTechs, favoriteProjects } = data;
+    const { welcomeMessage, profilePicUrl, favoriteTechs, favoriteProjects, footerSectionHeading } = data;
     const [isContentVisible, setContentVisible] = useState(false);
     const showContent = () => setContentVisible(true);
     const invisibleCSS = { opacity: 0 };
@@ -36,18 +34,11 @@ export default function HomePage(): React.ReactElement {
                 projects={favoriteProjects}
                 style={invisibleStyle}
             ></HomeFavoriteProjects>
-            <footer style={invisibleStyle}>
-                <h1>Quer saber mais?</h1>
-                <CardContentHolder>
-                    {menuData.buttons
-                        .filter(btn => btn.href !== '/home')
-                        .map(btn => <CardButton label={btn.text} href={btn.href}></CardButton>)
-                    }
-                    <div className='socialButtons'>
-                        {menuData.social.map(btn => <CardButton iconName={btn.iconName} label={btn.label} href={btn.href}></CardButton>)}
-                    </div>
-                </CardContentHolder>
-            </footer>
+            <HomeFooter
+                data={menuData}
+                heading={footerSectionHeading}
+                style={invisibleStyle}
+            ></HomeFooter>
         </main>
     </>
 }

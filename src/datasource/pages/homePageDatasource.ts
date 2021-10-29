@@ -14,7 +14,8 @@ const homePageDatasource: HomePageData = {
     favoriteProjects: {
         headingText: `Alguns dos meus projetos:`,
         projects: projectInfoDatasource.slice(0,3)
-    }
+    },
+    footerSectionHeading: `Quer saber mais?`
 };
 
 export default homePageDatasource;

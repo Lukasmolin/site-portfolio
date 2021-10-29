@@ -13,5 +13,6 @@ export default interface HomePageData {
     favoriteProjects: {
         headingText: string;
         projects: ProjectInfo[]
-    }
+    },
+    footerSectionHeading: string;
 }
