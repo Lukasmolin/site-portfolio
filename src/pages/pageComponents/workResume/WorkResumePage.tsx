@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import HeaderMenu from '../../../components/gui/headerMenu/HeaderMenu';
 import getHeaderMenuData from '../../datasourceGetters/getHeaderMenuData';
 import getWorkResumePageData from '../../datasourceGetters/getWorkResumePageData';
@@ -11,6 +11,8 @@ const data = getWorkResumePageData();
 const { person, workResume } = data;
 
 export default function WorkResumePage(): React.ReactElement {
+    useLayoutEffect(() => window.scrollTo(0, 0));
+
     return <>
         <HeaderMenu data={menuData}></HeaderMenu>
         <main className='workResumePage'>

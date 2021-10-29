@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import './AboutMePage.css';
 import getHeaderMenuData from '../../datasourceGetters/getHeaderMenuData';
 import getAboutMePageData from '../../datasourceGetters/getAboutMePageData';
@@ -12,12 +12,13 @@ const headerData = getHeaderMenuData();
 export default function AboutMePage(): React.ReactElement {
     const { title, text, cardsTitle } = data;
     const { left, centerLeft, centerRight, right } = data.cards;
+    useLayoutEffect(() => window.scrollTo(0, 0));
     
-    function createCardFromInfo(info: StackInfo, smallbadge?: boolean) {
+    function createCardFromInfo(info: StackInfo, smallBadge?: boolean) {
         const { color } = info;
         return <StackInfoCard
             highlighColor={color}
-            smallBadge={smallbadge}
+            smallBadge={smallBadge}
             stackInfo={info}
         ></StackInfoCard>
     }

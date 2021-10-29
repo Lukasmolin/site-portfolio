@@ -12,7 +12,6 @@ It's my portfolio and a way for me to keep track of my progress as a web develop
 - [x] Deploy
 - [ ] Change vanila css for styled components
 - [ ] Integrate with Blog/CMS
-- [ ] Then who knows what the future will hold
 
 ## Running the app locally
 
@@ -22,8 +21,54 @@ If you wish to run it simply clone it to your machine then in the project folder
 npm install
 npm start
 ```
-after that you should find the site at: [http://localhost:3000](http://localhost:3000)
+After that you should find the site at: [http://localhost:3000](http://localhost:3000)
 
+## Directory structure
+
+Css files should be located next to the component importing them and deal only with specific elements of that component using html classes.
+### assets
+
+Static assets exported as jsx/tsx elements such as SVG elements.
+
+### components
+
+React components used as building blocks of pages
+
+#### components/fx
+
+React elements used to apply animations to other elements
+
+#### components/gui
+
+Visual components used to build the pages.
+
+### datasource
+
+Stores persistent information. The content of the site itself.
+
+#### datasource/model
+
+Stores information of the src/model entities such as Projects or Person.
+
+#### datasource/pages
+
+Stores information directly used by the src/pages components such as HomePage.
+
+### model
+
+Its the domain modelling. It has interfaces and generic classes to be used by the rest of the application.
+
+### pages
+
+Are the page components to be rendered by react router
+
+#### pages/datasourceGetters
+
+Static functions for each page to import its relevant data for rendering
+
+#### pages/pageComponents
+
+React elements representing full pages
 ## Available Scripts
 
 In the project directory, you can run:
@@ -41,7 +86,7 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm build`
+### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -51,7 +96,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm eject`
+### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
