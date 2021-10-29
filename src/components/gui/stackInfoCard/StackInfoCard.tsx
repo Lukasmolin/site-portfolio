@@ -18,7 +18,7 @@ export default function StackInfoCard(props: { stackInfo: StackInfo, highlighCol
             </div>
             <h1>{stackInfo.title}</h1>
             <ul>
-                {stackInfo.items.map(item => <li>{item}</li>)}
+                {stackInfo.items.map(item => <li key={item}>{item}</li>)}
             </ul>
         </article>
     </CardContentHolder>;

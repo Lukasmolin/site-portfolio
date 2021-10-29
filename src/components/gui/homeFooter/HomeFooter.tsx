@@ -12,10 +12,10 @@ export default function HomeFooter(props: { data: HeaderMenuData, heading: strin
         <CardContentHolder>
             {data.buttons
                 .filter(btn => btn.href !== '/home')
-                .map(btn => <CardButton label={btn.text} href={btn.href}></CardButton>)
+                .map(btn => <CardButton key={btn.href} label={btn.text} href={btn.href}></CardButton>)
             }
             <div className='socialButtons'>
-                {data.social.map(btn => <CardButton iconName={btn.iconName} label={btn.label} href={btn.href}></CardButton>)}
+                {data.social.map(btn => <CardButton key={btn.label} iconName={btn.iconName} label={btn.label} href={btn.href}></CardButton>)}
             </div>
         </CardContentHolder>
     </footer>;

@@ -1,12 +1,37 @@
-# Getting Started with Create React App
+# My personal site's code
+Here you'll find the source code for [this site](https://lukasmolin.github.io/).
+It's my portfolio and a way for me to keep track of my progress as a web developer. It contains a organized list of my projects and i plan to integrate it with a blog so i can use as a journal or something like that to express some thoughts about software engineering and computer science in general./
+<img src="https://img.shields.io/badge/Typescript-007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"></img>
+<img src="https://img.shields.io/badge/React-61CDE8.svg?style=flat-square&logo=react&logoColor=white"></img>
+<img src="https://img.shields.io/badge/HTML-E34F26.svg?style=flat-square&logo=html5&logoColor=white"></img>
+<img src="https://img.shields.io/badge/CSS-1572B6.svg?style=flat-square&logo=css3&logoColor=white"></img>
+
+## Roadmap
+
+- [x] Basic website
+- [x] Deploy
+- [ ] Change vanila css for styled components
+- [ ] Integrate with Blog/CMS
+
+## Running the app locally
+
+This project was created using [Create React App](https://github.com/facebook/create-react-app).
+If you wish to run it simply clone it to your machine than in the project folder execute:
+```
+npm install
+npm start
+```
+Then you should find the site at: [localhost:3000](localhost:3000)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+#### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,12 +39,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
+#### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+#### `npm build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -29,7 +54,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+#### `npm eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
@@ -39,7 +64,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Learn More of
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
