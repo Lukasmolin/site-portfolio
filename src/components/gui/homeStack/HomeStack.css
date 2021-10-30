@@ -11,19 +11,24 @@
 }
 
 .stackSection .mainStackCards ul li {
-    min-width: 18%;
-    max-width: 18%;
+    width: 25%;
     display: flex;
-    margin: 10px;
+    padding: 6px;
 }
 
 .stackSection .mainStackCards ul li>* {
     width: 100%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (min-width: 1200px) {
     .stackSection .mainStackCards ul li {
-        min-width: 24%;
-        max-width: 25%;
+        width: 18%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .stackSection .mainStackCards ul li {
+        padding: 2px;
     }
 }
