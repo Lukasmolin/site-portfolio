@@ -14,7 +14,7 @@ export default function WorkResumeTitle(props: { data: WorkResumeTitleData }) {
                 <div className='personName'>{person.name}</div>
                 <div className='personRole'>{person.role}</div>
                 <address className='personAddress'>
-                    {person.adress}
+                    {person.address}
                 </address>
             </div>
             <div className='personSocial'>

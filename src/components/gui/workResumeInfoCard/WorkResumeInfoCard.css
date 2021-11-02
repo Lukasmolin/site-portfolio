@@ -1,3 +1,11 @@
+.workResumeInfoCard {
+    margin-bottom: 10px;
+}
+
+.workResumeInfoCard:last-child {
+    margin-bottom: 0px;
+}
+
 .workResumeInfoCard h2 {
     font-size: var(--secondary-font-size);
     color: var(--main-color);

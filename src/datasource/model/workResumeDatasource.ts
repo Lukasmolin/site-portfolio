@@ -19,9 +19,9 @@ const workResumeDatasource: WorkResume = {
         heading: `Competências`,
         items: [{
             content: [
-                'Criativo, curioso, flexível, comunicativo e colaborativo',
-                'Inglês fluente para conversação, textos e documentos técnicos',
-                'Noções de TDD e Arquitetura Limpa'
+                'Criativo, curioso, flexível, comunicativo e colaborativo.',
+                'Inglês fluente para conversação, textos e documentos técnicos.',
+                'Noções de TDD e Arquitetura Limpa.'
             ]
         }]
     }, {
@@ -35,6 +35,24 @@ const workResumeDatasource: WorkResume = {
             content: [
                 `Informatização da gestão de processos judiciais, atividades acadêmicas e fluxo interno do Núcleo onde executo um amplo espectro de tarefas desde a análise de requisitos, desenvolvimento com Spring, Hibernate (JPA), Postgres e Thymeleaf, elaboração de testes com JUnit, Mockito e Selenium até a implantação com Docker na AWS EC2 em Linux Debian.`
             ]
+        },{
+            heading: `Músico (Freelancer)`,
+            duration: {
+                start: new Date(2016, 3),
+                end: new Date(2018, 7)
+            },
+            content: [
+                `Trabalhei como músico desempenhando diversas funções diferentes simultaneamente: dava aulas de teclado presencialmente e pela internet, tocava e cantava em estabelecimentos e também performei como músico contratado em alguns projetos artísticos de terceiros.`
+            ]
+        },{
+            heading: `Técnico em manutenção de computadores (Freelancer)`,
+            duration: {
+                start: new Date(2014, 3),
+                end: new Date(2016, 12)
+            },
+            content: [
+                `Trabalhei com manutenção de computadores respondendo a chamados na casa de clientes para realizar serviços como diagnóstico de problemas, formatação, remoção de malware, reparos a nível de software, diagnóstico de problemas de hardware e encaminhamento para reparos eletrônicos.`
+            ]
         }]
     }, {
         label: 'education',
@@ -45,7 +63,7 @@ const workResumeDatasource: WorkResume = {
                 start: new Date(2017, 6)
             },
             content: [
-                `Informatização da gestão de processos judiciais, atividades acadêmicas e fluxo interno do Núcleo onde executo um amplo espectro de tarefas desde a análise de requisitos, desenvolvimento com Spring, Hibernate (JPA), Postgres e Thymeleaf, elaboração de testes com JUnit, Mockito e Selenium até a implantação com Docker na AWS EC2 em Linux Debian.`
+                `Aprender sobre uma paixão pessoal em uma instituição de qualidade como a UFJF é um sonho realizado. Me sinto como uma criança estudando numa Hogwarts da vida real.`
             ]
         }]
     }, {

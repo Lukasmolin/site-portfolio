@@ -4,15 +4,13 @@ import { Techs } from "./Techs";
 const ownerDatasource: Person = {
     name : `Lucas Molin`,
     role : `Desenvolvedor Web`,
-    adress : `Juiz de Fora, Minas Gerais, Brasil`,
+    address : `Juiz de Fora, Minas Gerais, Brasil`,
     profilePictureUrl : `https://avatars.githubusercontent.com/u/38398230?v=4`,
-    aboutMe : `Sou dev, músico, gamer e aluno de Sistemas de Informação.
-    Puxei do meu pai a paixão por computação desde novinho. Já tive um blog de tecnologia chamado 
-    Combo Digital e já trabalhei com manutenção de PC antes de entrar na faculdade. Hoje foco 
-    principalmente em web com Node ou Java no back e React no front. Curioso e autodidata, desde 
-    pequeno aprendo as coisas conforme faço, experimentando e pesquisando. Fico motivado quando 
-    me sinto útil por isso tô sempre disposto a mudar e aprender coisas novas quando acredito 
-    que isso vá agregar.`,
+    aboutMe : `Sou dev, músico, gamer e aluno de Sistemas de Informação. Aprendi a programar ainda novinho 
+    com meu pai. Tive um blog de tecnologia chamado Combo Digital na adolescência, trabalhei com manutenção 
+    de PC e música. Hoje atua com bolsista desenvolvedor fullstack. Curioso e autodidata, desde sempre aprendo 
+    as coisas por conta própria, experimentando e pesquisando. Me motivo quando me sinto útil por isso tô 
+    sempre disposto a mudar e aprender coisas novas quando acredito que isso vá agregar ao contexto que eu tô.`,
     social: [
         {
             label: 'Github',

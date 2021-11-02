@@ -10,6 +10,7 @@ It's my portfolio and a way for me to keep track of my progress as a web develop
 
 - [x] Basic website
 - [x] Deploy
+- [ ] Fetch project info's from github's API
 - [ ] Change vanila css for styled components
 - [ ] Integrate with Blog/CMS
 
