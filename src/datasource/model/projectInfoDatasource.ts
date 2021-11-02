@@ -33,7 +33,7 @@ const projectInfoDatasource: ProjectInfo[] = [
         projectDescription: `É o site aqui que você tá agora com um pouco sobre mim, meus projetos e as tecnologias que eu curto.`,
         techs: [Techs.typescript, Techs.react, Techs.html5, Techs.css3, Techs.npm],
         relatedLinks: [{
-            href: 'https://github.com/',
+            href: 'https://github.com/Lukasmolin/site-portfolio',
             label: 'Código',
             iconName: 'github'
         }]

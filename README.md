@@ -1,6 +1,6 @@
 # My personal site
 Here you'll find the source code for [this site](https://lukasmolin.github.io/).
-It's my portfolio and a way for me to keep track of my progress as a web developer. It contains a organized list of my projects and i plan to integrate it with a blog so i can use as a journal or something like that to express some thoughts about software engineering and computer science in general.\
+It's my portfolio and a way for me to keep track of my progress as a web developer. It contains a organized list of my projects and i plan to integrate it with a blog so i can use as a journal or something to express some thoughts about software and computer science in general.\
 <img src="https://img.shields.io/badge/Typescript-007ACC.svg?style=flat-square&logo=typescript&logoColor=white"></img>
 <img src="https://img.shields.io/badge/React-61CDE8.svg?style=flat-square&logo=react&logoColor=white"></img>
 <img src="https://img.shields.io/badge/HTML-E34F26.svg?style=flat-square&logo=html5&logoColor=white"></img>
@@ -16,7 +16,7 @@ It's my portfolio and a way for me to keep track of my progress as a web develop
 ## Running the app locally
 
 This project was created using [Create React App](https://github.com/facebook/create-react-app).
-If you wish to run it simply clone it to your machine then in the project folder execute:
+If you wish to run it simply clone it to your machine and in the project folder execute:
 ```
 npm install
 npm start
@@ -25,10 +25,10 @@ After that you should find the site at: [http://localhost:3000](http://localhost
 
 ## Directory structure
 
-Css files should be located next to the component importing them and deal only with specific elements of that component using html classes.
+Css files should be located next to the component importing them and deal only with specific elements of that component using html classes. I plan to change plain CSS for styled components in the future.
 ### assets
 
-Static assets exported as jsx/tsx elements such as SVG elements.
+Static assets exported as .JSX/.TSX React Elements such as SVGs.
 
 ### components
 
@@ -44,23 +44,23 @@ Visual components used to build the pages.
 
 ### datasource
 
-Stores persistent information. The content of the site itself.
+Storage of static persistent information. The content of the site itself.
 
 #### datasource/model
 
-Stores information of the src/model entities such as Projects or Person.
+Stores information about the src/model entities such as Projects or Person.
 
 #### datasource/pages
 
-Stores information directly used by the src/pages components such as HomePage.
+Stores information about Pages components and their presentation related data like headings.
 
 ### model
 
-Its the domain modelling. It has interfaces and generic classes to be used by the rest of the application.
+Its the domain. It has interfaces and generic classes representing projects, persons, etc to be used by the rest of the application.
 
 ### pages
 
-Are the page components to be rendered by react router
+Top level page components to be rendered by React Router
 
 #### pages/datasourceGetters
 
