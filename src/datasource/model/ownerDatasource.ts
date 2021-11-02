@@ -7,10 +7,11 @@ const ownerDatasource: Person = {
     address : `Juiz de Fora, Minas Gerais, Brasil`,
     profilePictureUrl : `https://avatars.githubusercontent.com/u/38398230?v=4`,
     aboutMe : `Sou dev, músico, gamer e aluno de Sistemas de Informação. Aprendi a programar ainda novinho 
-    com meu pai. Tive um blog de tecnologia chamado Combo Digital na adolescência, trabalhei com manutenção 
-    de PC e música. Hoje atua com bolsista desenvolvedor fullstack. Curioso e autodidata, desde sempre aprendo 
-    as coisas por conta própria, experimentando e pesquisando. Me motivo quando me sinto útil por isso tô 
-    sempre disposto a mudar e aprender coisas novas quando acredito que isso vá agregar ao contexto que eu tô.`,
+    com meu pai. Tive um blog de tecnologia chamado Combo Digital na adolescência e já trabalhei com música 
+    e manutenção de computadores. Hoje atuo como bolsista desenvolvedor fullstack. Curioso e autodidata, 
+    desde sempre aprendo as coisas por conta própria, experimentando e pesquisando. Me motivo quando me 
+    sinto útil pra quem está ao meu redor por isso tô sempre disposto a mudar e aprender coisas novas pra 
+    agregar ao contexto e a equipe.`,
     social: [
         {
             label: 'Github',
@@ -19,7 +20,7 @@ const ownerDatasource: Person = {
         }, {
             label: 'LinkedIn',
             href: 'https://www.linkedin.com/in/lucas-molin-dev/',
-            iconName: 'linkedin'
+            iconName: 'LinkedIn'
         }
     ],
     favoriteStack: [

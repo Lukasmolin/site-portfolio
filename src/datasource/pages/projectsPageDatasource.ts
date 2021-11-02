@@ -2,7 +2,7 @@ import ProjectsPageData from "../../pages/pageComponents/projects/ProjectsPageDa
 import projectInfoDatasource from "../model/projectInfoDatasource";
 
 const projectsPageDatasource: ProjectsPageData = {
-    heading: `Meus projetos`,
+    heading: `Meus projetos:`,
     projects: projectInfoDatasource
 }
 
