@@ -42,7 +42,7 @@ const workResumeDatasource: WorkResume = {
                 end: new Date(2018, 7)
             },
             content: [
-                `Trabalhei como músico desempenhando diversas funções diferentes simultaneamente: dava aulas de teclado presencialmente e pela internet, tocava e cantava em estabelecimentos e também performei como músico contratado em alguns projetos artísticos de terceiros.`
+                `Desempenhava diversas funções como músico freelancer: dava aulas de teclado presencialmente e pela internet, tocava e cantava em estabelecimentos e também performava como músico contratado em projetos artísticos de terceiros.`
             ]
         },{
             heading: `Técnico em manutenção de computadores (Freelancer)`,
@@ -51,7 +51,7 @@ const workResumeDatasource: WorkResume = {
                 end: new Date(2016, 12)
             },
             content: [
-                `Trabalhei com manutenção de computadores respondendo a chamados na casa de clientes para realizar serviços como diagnóstico de problemas, formatação, remoção de malware, reparos a nível de software, diagnóstico de problemas de hardware e encaminhamento para reparos eletrônicos.`
+                `Respondia a chamados na casa de clientes para realizar serviços como diagnóstico de problemas, formatação, remoção de malware, reparos a nível de software, diagnóstico de problemas de hardware e encaminhamento para reparos eletrônicos.`
             ]
         }]
     }, {
@@ -63,7 +63,7 @@ const workResumeDatasource: WorkResume = {
                 start: new Date(2017, 6)
             },
             content: [
-                `Aprender sobre uma paixão pessoal em uma instituição de qualidade como a UFJF é um sonho realizado. Me sinto como uma criança estudando numa Hogwarts da vida real.`
+                `Aprender sobre uma paixão pessoal em uma instituição de qualidade como a UFJF é na verdade a realização do meus sonhos de vestibulando.`
             ]
         }]
     }, {

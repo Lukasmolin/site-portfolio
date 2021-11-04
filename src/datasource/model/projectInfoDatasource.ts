@@ -16,8 +16,8 @@ const projectInfoDatasource: ProjectInfo[] = [
             iconName: 'github'
         }]
     }, {
-        projectTitle: `Núcleo de Práticas Jurídicas - UFJF`,
-        projectDescription: `Como bolsista ajudo a desenvolver o sistema de gestão interna e processos judiciais do núcleo de apoio a práticas jurídicas da UFJF.`,
+        projectTitle: `Sistema Interno NPJ - UFJF`,
+        projectDescription: `Sistema interno do Núcleo de Práticas Jurídicas para gestão do fluxo interno, atendimentos e acompanhamento de processos judiciais.`,
         techs: [
             Techs.java, Techs.springBoot, Techs.springSecurity, Techs.hibernateJpa,
             Techs.postgres, Techs.junit, Techs.selenium, Techs.javascript, Techs.thymeleaf, Techs.html5,

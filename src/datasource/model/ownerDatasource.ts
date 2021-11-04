@@ -9,9 +9,8 @@ const ownerDatasource: Person = {
     aboutMe : `Sou dev, músico, gamer e aluno de Sistemas de Informação. Aprendi a programar ainda novinho 
     com meu pai. Tive um blog de tecnologia chamado Combo Digital na adolescência e já trabalhei com música 
     e manutenção de computadores. Hoje atuo como bolsista desenvolvedor fullstack. Curioso e autodidata, 
-    desde sempre aprendo as coisas por conta própria, experimentando e pesquisando. Me motivo quando me 
-    sinto útil pra quem está ao meu redor por isso tô sempre disposto a mudar e aprender coisas novas pra 
-    agregar ao contexto e a equipe.`,
+    desde sempre aprendo as coisas por conta própria, experimentando e pesquisando. Gosto de me sentir 
+    útil por isso tô sempre disposto a mudar e aprender coisas novas quando sinto que vai agregar.`,
     social: [
         {
             label: 'Github',
@@ -20,7 +19,7 @@ const ownerDatasource: Person = {
         }, {
             label: 'LinkedIn',
             href: 'https://www.linkedin.com/in/lucas-molin-dev/',
-            iconName: 'LinkedIn'
+            iconName: 'linkedin'
         }
     ],
     favoriteStack: [

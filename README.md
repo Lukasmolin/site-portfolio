@@ -6,13 +6,14 @@ It's my portfolio and a way for me to keep track of my progress as a web develop
 <img src="https://img.shields.io/badge/HTML-E34F26.svg?style=flat-square&logo=html5&logoColor=white"></img>
 <img src="https://img.shields.io/badge/CSS-1572B6.svg?style=flat-square&logo=css3&logoColor=white"></img>
 
-## Roadmap
+## RoadMap
 
 - [x] Basic website
 - [x] Deploy
-- [ ] Fetch project info's from github's API
-- [ ] Change vanila css for styled components
+- [ ] Fetch project's info from github's API
 - [ ] Integrate with Blog/CMS
+- [ ] Generate work resume PDF on client side
+- [ ] Change vanila css for styled components
 
 ## Running the app locally
 
